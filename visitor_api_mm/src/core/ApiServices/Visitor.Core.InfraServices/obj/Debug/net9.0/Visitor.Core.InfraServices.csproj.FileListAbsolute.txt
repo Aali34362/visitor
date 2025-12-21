@@ -1,0 +1,17 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.InfraServices.deps.json
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.InfraServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.InfraServices.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.DesignPatterns.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.DesignPatterns.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\bin\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.csproj.CoreCompileInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor..CAF1BA7D.Up2Date
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\refint\Visitor.Core.InfraServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\Visitor.Core.InfraServices.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.InfraServices\obj\Debug\net9.0\ref\Visitor.Core.InfraServices.dll

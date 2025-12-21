@@ -1,0 +1,1 @@
+﻿global using Visitor.Core.Domain.Base;

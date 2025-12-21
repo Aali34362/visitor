@@ -1,0 +1,12 @@
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\bin\Debug\net9.0\Inventory.Core.Base.deps.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\bin\Debug\net9.0\Inventory.Core.Base.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\bin\Debug\net9.0\Inventory.Core.Base.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.AssemblyInfoInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.AssemblyInfo.cs
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.csproj.CoreCompileInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.sourcelink.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\refint\Inventory.Core.Base.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\Inventory.Core.Base.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\Inventory.Core.Base\obj\Debug\net9.0\ref\Inventory.Core.Base.dll

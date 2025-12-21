@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "Hqi/FlNpc0NCM0FXoTAzy0+imQ5HjYxcJ10LXLt8i18=",
+  "Source": "Visitor.Core.Api",
+  "BasePath": "_content/Visitor.Core.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Visitor.Core.Api\\wwwroot",
+      "Source": "Visitor.Core.Api",
+      "ContentRoot": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\services\\Visitor.Core.Api\\wwwroot\\",
+      "BasePath": "_content/Visitor.Core.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

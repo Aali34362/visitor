@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ApiClientServices\" />
+    <Folder Include="DecoratorServices\CacheServices\" />
+    <Folder Include="DecoratorServices\VersionHistoryServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\ApiServices\Visitor.Core.InfraServices\Visitor.Core.InfraServices.csproj" />
+    <ProjectReference Include="..\Visitor.Module.IAM.Data\Visitor.Module.IAM.Data.csproj" />
+  </ItemGroup>
+
+</Project>

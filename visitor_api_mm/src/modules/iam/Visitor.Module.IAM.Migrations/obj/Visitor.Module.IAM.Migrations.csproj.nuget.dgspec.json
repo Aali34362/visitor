@@ -1,0 +1,757 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Migrations\\Visitor.Module.IAM.Migrations.csproj": {}
+  },
+  "projects": {
+    "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Db\\Visitor.Core.Db.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Db\\Visitor.Core.Db.csproj",
+        "projectName": "Visitor.Core.Db",
+        "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Db\\Visitor.Core.Db.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Db\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj": {
+                "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "AspNetCore.HealthChecks.Oracle": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.11, )",
+              "versionCentrallyManaged": true
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.3, )",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )",
+              "versionCentrallyManaged": true
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.90, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.6.7, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "AspNetCore.HealthChecks.MySql": "9.0.0",
+            "AspNetCore.HealthChecks.NpgSql": "9.0.0",
+            "AspNetCore.HealthChecks.Oracle": "9.0.0",
+            "AspNetCore.HealthChecks.SqlServer": "9.0.0",
+            "AutoMapper": "15.0.1",
+            "Dapper": "2.1.66",
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+            "Microsoft.AspNet.Mvc": "5.3.0",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
+            "Microsoft.AspNetCore.Mvc.Abstractions": "2.3.0",
+            "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+            "Microsoft.Data.SqlClient": "6.0.2",
+            "Microsoft.EntityFrameworkCore": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Proxies": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+            "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Configuration.Binder": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+            "Microsoft.Extensions.Http": "9.0.8",
+            "Microsoft.Extensions.Http.Resilience": "9.7.0",
+            "Microsoft.Extensions.ServiceDiscovery": "9.4.0",
+            "MySql.EntityFrameworkCore": "9.0.6",
+            "Npgsql": "9.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+            "Oracle.EntityFrameworkCore": "9.23.90",
+            "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
+            "Scrutor": "6.1.0",
+            "Serilog": "4.3.1-dev-02373",
+            "Serilog.Extensions.Hosting": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.0",
+            "Serilog.Sinks.Console": "6.0.0",
+            "Serilog.Sinks.File": "7.0.0",
+            "Swashbuckle.AspNetCore": "9.0.3",
+            "Swashbuckle.AspNetCore.Annotations": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
+            "System.IdentityModel.Tokens.Jwt": "8.13.0",
+            "System.Linq.Dynamic.Core": "1.6.7"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj",
+        "projectName": "Visitor.Core.Domain",
+        "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[6.1.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "AspNetCore.HealthChecks.MySql": "9.0.0",
+            "AspNetCore.HealthChecks.NpgSql": "9.0.0",
+            "AspNetCore.HealthChecks.Oracle": "9.0.0",
+            "AspNetCore.HealthChecks.SqlServer": "9.0.0",
+            "AutoMapper": "15.0.1",
+            "Dapper": "2.1.66",
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+            "Microsoft.AspNet.Mvc": "5.3.0",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
+            "Microsoft.AspNetCore.Mvc.Abstractions": "2.3.0",
+            "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+            "Microsoft.Data.SqlClient": "6.0.2",
+            "Microsoft.EntityFrameworkCore": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Proxies": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+            "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Configuration.Binder": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+            "Microsoft.Extensions.Http": "9.0.8",
+            "Microsoft.Extensions.Http.Resilience": "9.7.0",
+            "Microsoft.Extensions.ServiceDiscovery": "9.4.0",
+            "MySql.EntityFrameworkCore": "9.0.6",
+            "Npgsql": "9.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+            "Oracle.EntityFrameworkCore": "9.23.90",
+            "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
+            "Scrutor": "6.1.0",
+            "Serilog": "4.3.1-dev-02373",
+            "Serilog.Extensions.Hosting": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.0",
+            "Serilog.Sinks.Console": "6.0.0",
+            "Serilog.Sinks.File": "7.0.0",
+            "Swashbuckle.AspNetCore": "9.0.3",
+            "Swashbuckle.AspNetCore.Annotations": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
+            "System.IdentityModel.Tokens.Jwt": "8.13.0",
+            "System.Linq.Dynamic.Core": "1.6.7"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Data\\Visitor.Module.IAM.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Data\\Visitor.Module.IAM.Data.csproj",
+        "projectName": "Visitor.Module.IAM.Data",
+        "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Data\\Visitor.Module.IAM.Data.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Db\\Visitor.Core.Db.csproj": {
+                "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Db\\Visitor.Core.Db.csproj"
+              },
+              "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Domain\\Visitor.Module.IAM.Domain.csproj": {
+                "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Domain\\Visitor.Module.IAM.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "AspNetCore.HealthChecks.MySql": "9.0.0",
+            "AspNetCore.HealthChecks.NpgSql": "9.0.0",
+            "AspNetCore.HealthChecks.Oracle": "9.0.0",
+            "AspNetCore.HealthChecks.SqlServer": "9.0.0",
+            "AutoMapper": "15.0.1",
+            "Dapper": "2.1.66",
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+            "Microsoft.AspNet.Mvc": "5.3.0",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
+            "Microsoft.AspNetCore.Mvc.Abstractions": "2.3.0",
+            "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+            "Microsoft.Data.SqlClient": "6.0.2",
+            "Microsoft.EntityFrameworkCore": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Proxies": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+            "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Configuration.Binder": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+            "Microsoft.Extensions.Http": "9.0.8",
+            "Microsoft.Extensions.Http.Resilience": "9.7.0",
+            "Microsoft.Extensions.ServiceDiscovery": "9.4.0",
+            "MySql.EntityFrameworkCore": "9.0.6",
+            "Npgsql": "9.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+            "Oracle.EntityFrameworkCore": "9.23.90",
+            "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
+            "Scrutor": "6.1.0",
+            "Serilog": "4.3.1-dev-02373",
+            "Serilog.Extensions.Hosting": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.0",
+            "Serilog.Sinks.Console": "6.0.0",
+            "Serilog.Sinks.File": "7.0.0",
+            "Swashbuckle.AspNetCore": "9.0.3",
+            "Swashbuckle.AspNetCore.Annotations": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
+            "System.IdentityModel.Tokens.Jwt": "8.13.0",
+            "System.Linq.Dynamic.Core": "1.6.7"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Domain\\Visitor.Module.IAM.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Domain\\Visitor.Module.IAM.Domain.csproj",
+        "projectName": "Visitor.Module.IAM.Domain",
+        "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Domain\\Visitor.Module.IAM.Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj": {
+                "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\core\\ApiServices\\Visitor.Core.Domain\\Visitor.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "AspNetCore.HealthChecks.MySql": "9.0.0",
+            "AspNetCore.HealthChecks.NpgSql": "9.0.0",
+            "AspNetCore.HealthChecks.Oracle": "9.0.0",
+            "AspNetCore.HealthChecks.SqlServer": "9.0.0",
+            "AutoMapper": "15.0.1",
+            "Dapper": "2.1.66",
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+            "Microsoft.AspNet.Mvc": "5.3.0",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
+            "Microsoft.AspNetCore.Mvc.Abstractions": "2.3.0",
+            "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+            "Microsoft.Data.SqlClient": "6.0.2",
+            "Microsoft.EntityFrameworkCore": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Proxies": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+            "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Configuration.Binder": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+            "Microsoft.Extensions.Http": "9.0.8",
+            "Microsoft.Extensions.Http.Resilience": "9.7.0",
+            "Microsoft.Extensions.ServiceDiscovery": "9.4.0",
+            "MySql.EntityFrameworkCore": "9.0.6",
+            "Npgsql": "9.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+            "Oracle.EntityFrameworkCore": "9.23.90",
+            "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
+            "Scrutor": "6.1.0",
+            "Serilog": "4.3.1-dev-02373",
+            "Serilog.Extensions.Hosting": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.0",
+            "Serilog.Sinks.Console": "6.0.0",
+            "Serilog.Sinks.File": "7.0.0",
+            "Swashbuckle.AspNetCore": "9.0.3",
+            "Swashbuckle.AspNetCore.Annotations": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
+            "System.IdentityModel.Tokens.Jwt": "8.13.0",
+            "System.Linq.Dynamic.Core": "1.6.7"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Migrations\\Visitor.Module.IAM.Migrations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Migrations\\Visitor.Module.IAM.Migrations.csproj",
+        "projectName": "Visitor.Module.IAM.Migrations",
+        "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Migrations\\Visitor.Module.IAM.Migrations.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Migrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Data\\Visitor.Module.IAM.Data.csproj": {
+                "projectPath": "D:\\Programming\\Asp\\AspCore\\v8\\SecurityManagement\\visitor\\visitor_api_mm\\src\\modules\\iam\\Visitor.Module.IAM.Data\\Visitor.Module.IAM.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[9.0.8, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "AspNetCore.HealthChecks.MySql": "9.0.0",
+            "AspNetCore.HealthChecks.NpgSql": "9.0.0",
+            "AspNetCore.HealthChecks.Oracle": "9.0.0",
+            "AspNetCore.HealthChecks.SqlServer": "9.0.0",
+            "AutoMapper": "15.0.1",
+            "Dapper": "2.1.66",
+            "FluentValidation": "12.0.0",
+            "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+            "Microsoft.AspNet.Mvc": "5.3.0",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
+            "Microsoft.AspNetCore.Mvc.Abstractions": "2.3.0",
+            "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+            "Microsoft.Data.SqlClient": "6.0.2",
+            "Microsoft.EntityFrameworkCore": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Proxies": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+            "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Configuration.Binder": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+            "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+            "Microsoft.Extensions.Http": "9.0.8",
+            "Microsoft.Extensions.Http.Resilience": "9.7.0",
+            "Microsoft.Extensions.ServiceDiscovery": "9.4.0",
+            "MySql.EntityFrameworkCore": "9.0.6",
+            "Npgsql": "9.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+            "Oracle.EntityFrameworkCore": "9.23.90",
+            "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
+            "Scrutor": "6.1.0",
+            "Serilog": "4.3.1-dev-02373",
+            "Serilog.Extensions.Hosting": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.0",
+            "Serilog.Sinks.Console": "6.0.0",
+            "Serilog.Sinks.File": "7.0.0",
+            "Swashbuckle.AspNetCore": "9.0.3",
+            "Swashbuckle.AspNetCore.Annotations": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
+            "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
+            "System.IdentityModel.Tokens.Jwt": "8.13.0",
+            "System.Linq.Dynamic.Core": "1.6.7"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

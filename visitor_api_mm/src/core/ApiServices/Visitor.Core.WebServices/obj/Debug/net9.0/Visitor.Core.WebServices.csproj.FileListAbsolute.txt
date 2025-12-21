@@ -1,0 +1,15 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\bin\Debug\net9.0\Visitor.Core.WebServices.deps.json
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\bin\Debug\net9.0\Visitor.Core.WebServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\bin\Debug\net9.0\Visitor.Core.WebServices.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\bin\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\bin\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.csproj.CoreCompileInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor..412D7353.Up2Date
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\refint\Visitor.Core.WebServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\ref\Visitor.Core.WebServices.dll

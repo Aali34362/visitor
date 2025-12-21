@@ -1,0 +1,10 @@
+﻿global using Visitor.Core.ApiServices.Controllers;
+global using Visitor.Core.Domain.Settings;
+global using Visitor.Module.IAM.Application.AppServices;
+global using Visitor.Module.IAM.Application.ModelDtos;
+global using Visitor.Module.IAM.Domain.Responses;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Swashbuckle.AspNetCore.Annotations;
+global using System.ComponentModel.DataAnnotations;
+global using Visitor.Core.DesignPatterns.ResultPattern;

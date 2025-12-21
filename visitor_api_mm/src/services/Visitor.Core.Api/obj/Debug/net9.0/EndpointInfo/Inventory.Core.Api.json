@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Inventory API - V1",
+    "description": "Inventory API Description",
+    "contact": {
+      "name": "Inforter",
+      "email": "support@inforter.com"
+    },
+    "version": "v1"
+  },
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

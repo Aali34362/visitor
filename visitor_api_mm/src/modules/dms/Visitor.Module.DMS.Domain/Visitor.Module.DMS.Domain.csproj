@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\core\ApiServices\Visitor.Core.DesignPatterns\Visitor.Core.DesignPatterns.csproj" />
+    <ProjectReference Include="..\..\..\core\ApiServices\Visitor.Core.Domain\Visitor.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

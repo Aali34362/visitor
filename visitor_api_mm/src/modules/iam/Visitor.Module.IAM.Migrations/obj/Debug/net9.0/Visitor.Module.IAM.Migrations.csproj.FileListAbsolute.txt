@@ -1,0 +1,5 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Migrations\obj\Debug\net9.0\Visitor.Module.IAM.Migrations.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Migrations\obj\Debug\net9.0\Visitor.Module.IAM.Migrations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Migrations\obj\Debug\net9.0\Visitor.Module.IAM.Migrations.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Migrations\obj\Debug\net9.0\Visitor.Module.IAM.Migrations.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Migrations\obj\Debug\net9.0\Visitor.Module.IAM.Migrations.csproj.CoreCompileInputs.cache

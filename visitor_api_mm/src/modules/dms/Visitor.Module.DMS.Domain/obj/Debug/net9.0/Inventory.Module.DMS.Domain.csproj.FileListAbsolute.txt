@@ -1,0 +1,16 @@
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\bin\Debug\net9.0\Inventory.Module.DMS.Domain.deps.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\bin\Debug\net9.0\Inventory.Module.DMS.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\bin\Debug\net9.0\Inventory.Module.DMS.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\bin\Debug\net9.0\Inventory.Core.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\bin\Debug\net9.0\Inventory.Core.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.csproj.AssemblyReference.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.AssemblyInfoInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.AssemblyInfo.cs
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.sourcelink.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventor.3A993558.Up2Date
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\refint\Inventory.Module.DMS.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\Inventory.Module.DMS.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\dms\Inventory.Module.DMS.Domain\obj\Debug\net9.0\ref\Inventory.Module.DMS.Domain.dll

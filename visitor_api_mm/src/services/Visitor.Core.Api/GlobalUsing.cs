@@ -1,0 +1,9 @@
+﻿global using Asp.Versioning.ApiExplorer;
+global using Visitor.Core.Api;
+global using Visitor.Core.Db.ContextFactory;
+global using Visitor.Core.Db.DbServices.SqlServices;
+global using Visitor.Core.Domain.Settings;
+global using Visitor.Core.WebServices.Extensions;
+global using Visitor.Core.WebServices.Middleware;
+global using Visitor.Module.DMS.Application;
+global using Visitor.Module.IAM.Application;

@@ -1,0 +1,15 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\bin\Debug\net9.0\Visitor.Core.DesignPatterns.deps.json
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\bin\Debug\net9.0\Visitor.Core.DesignPatterns.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\bin\Debug\net9.0\Visitor.Core.DesignPatterns.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\bin\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\bin\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.csproj.CoreCompileInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor..8D21E30B.Up2Date
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\refint\Visitor.Core.DesignPatterns.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\ref\Visitor.Core.DesignPatterns.dll

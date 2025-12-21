@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="GuardPattern\" />
+    <Folder Include="DecoratorPattern\" />
+    <Folder Include="FactoryPattern\" />
+    <Folder Include="OutboxPattern\" />
+    <Folder Include="ResiliencePattern\" />
+    <Folder Include="PipelinePattern\" />
+    <Folder Include="PagingPattern\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Visitor.Core.Domain\Visitor.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,340 @@
+Security Application
+So we are building an application where we will manage the security.
+So what we need to build is :
+entry level security management
+based on regions/areas we need to create cluster for whom we are providing security i.e :
+consider we are providing security to specific building/society/business park
+So we are providing them security guards and application
+what does this application do:
+most basic and important reason is to note who is going and coming in premises
+they will become a gateway/firewall to allow or stop based on premission giving by premise occupancies
+in this main application Admin will create an tenant based on geolocation in which it will register the details of premise and owners in those appartments or companies hub
+when a outsider comes to premise we will ask permission from tenant inside the premise for verification and allowance 
+if they confirm we will generate pass with photo to have proof about the vistor 
+1) either occupant raise ticket for incoming guest or parcel person for allowance 
+2) the security person raise ticket for incoming guest or parcel person for seeking the permission for allowance
+This is basic whole idea for build main application
+
+now entering into inner functionalities of application
+Admin Based Login:
+Admin will have lots to register
+1) Security Guards Details
+2) premise details
+3) Tenancies Generation based on geolocation 
+4) Mapping and Management among Security Guards allocations into Premises based on geolocation tenancies 
+5) Maintaining finance department
+6) Maintaining Security Gaurd Roles of works(shift, overtime, salary, holidays, etc)
+7) Maintaining Premises(incoming finance, tenure)
+8) 
+
+User Based Login:
+a) Security Gaurd Login:
+1) His Details(shift, overtime, salary, holidays)
+2) Premises Details
+3) Raised Permission by occupant of premise
+4) Raise Permission by him
+5) generate pass or ticket with in and out time
+
+b) Premises Based:
+i) Premise Login:
+.) Will have security guard details who is gonna work(shift, timings, holidays taken by guard, number of guards for which purpose)
+..) Will have list of people visited
+...) will have payment and finance details(payment notification per monthly basis or yearly,) 
+....) 
+
+
+ii) Occupants of Premise Login:
+.) will have only request page with one time sign on 
+..) either to approve or request for visitor
+
+iii) Guards Login:
+.) to see his or her own details
+..) which premise he is working
+...) apply holiday, or apply for overtime if someone is absent for their working hours
+....) login and logout maintain ability
+.....) requesting to tenant of premise to notify the visitor 
+
+
+SecurityCoreApp
+SecurityCoreApi
+SecurityCoreBackgroundService
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Future Implementation
+Live Tracker
+
+Pinpoint the exact location of your security guard on the map. Find out where your security guard was on the post site during the specified time frame.
+time-clock
+Time Clock
+
+GuardsPro’s integrated security guard time clock eliminates the need for carrying multiple devices to the patrol site and helps get rid of errors in timesheets.
+attn
+Guard Attendance
+
+Get multiple live notifications right within the dashboard. Easily find out when your guards confirm shifts, clock in or out, pick up open shifts, and do more.
+online-report
+Online Reporting
+
+Using GuardsPro reporting software you and your team can create custom reports and receive upto 25 different types of reports in real-time.
+geo-fencing
+Geofencing
+
+Define a virtual perimeter within which the guards are either restricted or authorized to move, and get notified of a violation on the dashboard.
+dispatch-center
+Dispatcher
+
+Allow your staff to attend dispatch calls coming in from multiple sources and assign dispatch calls to guards for rapid incident response.
+inactive-flag
+Idle Alerts
+
+Find out which guard has been inactive and when. With this feature you have the ability to address accountability among your guards.
+custom-report
+Custom Reports
+
+Create custom report templates to define reporting criteria for different clients to suit their reporting requirements and re-use them when needed.
+panic-button
+Panic Button
+
+Let security guards alert back-office users in real-time about any emergency on the post site by pressing the panic button on the guard app.
+shift-template
+Shift Templates
+
+Use security guard scheduling software to create shift templates and use them across multiple post sites when creating shifts for guards to work on.
+open-shift
+Open Shifts
+
+Shift status lets the guards confirm each shift and provide live status to give you the extra confidence & reassurance that your guards will be there.
+shift-confirmation
+Shift Status
+
+Shift status lets the guards confirm each shift and provide live status giving you extra confidence and reassurance that your guards will be on duty.
+notification
+Live Notifications
+
+Get multiple live notifications right within the dashboard. Find out when your guards confirm shifts, clock in or out, pick up open shifts and more.
+day-off-request
+Time Off
+
+Simply add and manage full or partial day, paid or unpaid leave requests submitted by the guards using their mobile app right on the dashboard.
+swap-shift
+Shift Exchange
+
+It enables security guards to exchange their confirmed shifts with other security guards with the approval of the back-office users.
+secure-database
+Secure Database
+
+With bank-grade encryption, all sensitive payroll data is stored and shared securely, safe from illegitimate use.
+visitor-management
+Visitor Manager
+
+Register and share the particulars of visitors and vehicles at each post-site using the GuardsPro mobile app with time in and time out details.
+task
+Tasks
+
+Create and assign tasks to individual security guards on-site to ensure they are completed by them and easily trackable by you in GuardsPro reporting.
+in-app-check-ins
+In-App Check-In Or Out
+
+Don’t burden your dispatcher with check-in or out phone calls. GuardsPro allows the guards to easily check-in or out of post sites using the app.
+easy-invoicing
+Invoices
+
+GuardsPro Invoicer makes it easy for you to create invoices on the go, share them with your clients, apply payments, and track their delivery status.
+estimate
+Estimates
+
+Create and share detailed estimates with your clients in a few clicks. Also view the status of the delivery estimate, make changes on the go and easily convert estimates to invoices.
+payroll-integration
+Payroll Integrations
+
+Generate accurate payroll reports and export them to Quickbooks, Gusto, ADP Workforce, and Paychex now in minutes. Eliminate double entries using it.
+map-integration
+Map Integration
+
+Tightly integrated in the back office, guard apps, and client apps, advanced maps give you and your team a clear view of the post sites using multiple map layers.
+post-order
+Post Orders
+
+Post orders are a critical component of every guard’s day-to-day activity. Always keep them updated by creating detailed post orders.
+attendance-reconciliation
+Attendance Reconciliation
+
+Eliminate the time consumed by back-office users to manually reconcile attendance of guards clocking-in late or early with this GuardPro feature.
+skill-set
+Skill Set
+
+Keep your clients happy by adding and utilizing your guard's skills and expertise to schedule them effectively and effortlessly on their post sites.
+department
+Departments
+
+After assigning security guards to the post site, you can easily assign shifts to them based on the departments easily created on the platform.
+message
+Messenger
+
+Effective communication is vital, which is why GuardsPro messenger allows the users to connect and collaborate with numerous chat options.
+custom-pay-rate-multiplier
+Overtime Multiplier
+
+Generating precise payroll reports requires setting precise pay rate multipliers. Take advantage of GuardsPro to do it for different guards.
+detail-system-log
+Login History
+
+Audit the detailed login history of your back-office users to step up security. Easily view the username, timestamp, login browsers, and much more.
+vacant-shift
+Vacant Shift
+
+Create a vacant shift on the early request of clients visible only to the back-office users until the guards are assigned to it in the near future.
+support-ticket
+Support Ticket
+
+Have a question or a query? This feature is built in-system that can be used to help you reach us for a quick solution.
+checklist
+Checklist
+
+Quickly create and share a list of items with security guards that need to be checked off on the post site during the shift.
+help-center
+Support Center
+
+Need help? GuardsPro guard tour system’s support center provides access to vast support articles and walkthrough videos.
+client-portal
+Client Web Portal
+
+Your clients can have secure access to all the critical data using the GuardsPro Client Web Portal. Thus, ensuring transparency at all times.
+client-mobile-app
+Client Mobile App
+
+This mobile version of the Client Web Portal allows clients to check post site activity such as reports, site tours, GPS tracking, and much more.
+
+3) Guard Web Portal
+{
+ "Details" : "Guards can login using their mobile app credentials on this web version of the app for guards to submit reports, clock-in, check-in, & do much more."
+}
+3) Doc And Policies
+{
+ "Details" : "GuardsPro allows sharing your company policies with guards seamlessly so that they can access & acknowledge it on their mobile app on the go."
+}
+3) Analytics
+{
+ "Details" : "Analytics for scheduler and reports is designed to help you evaluate crucial data graphically and make informed decisions quickly. "
+}
+3) Comments
+{
+ "Details" : "The back-office dashboard users can add comments and mention each other throughout the system using this feature. "
+}
+3) Exchange Shift
+{
+ "Details" : "It enables the security guards to request the back-office users to exchange shifts or pass it to another guard even if it was confirmed."
+}
+3) Vehicle Patrol
+{
+ "Details" : "It allows the back-office users to predefine routes and vehicles for security guards to conduct vehicle patrol using their mobile app."
+}
+3) 2-Step Authentication
+{
+ "Details" : "GuardsPro guard tour system has upgraded its security by adding 2-step authentication for all back-office users."
+}
+3) Deep Linking
+{
+ "Details" : "We’ve inserted deep linking in email notifications for all user types, so you can be directed to a specific page than the login page."
+}
+3) Dark Mode
+{
+ "Details" : "Your back-office users as well as security guards can change their back-office dashboard or mobile app’s setting to dark mode."
+}
+3) Invoicer Item
+{
+ "Details" : "There is a new menu called Item added under GuardsPro invoicer where a user can define an item as taxable or non-taxable."
+}
+3) User Roles
+{
+ "Details" : "Give your entire security team access to GuardsPro by creating custom roles and giving custom access to the platform to individual or multiple team members."
+}
+3) Cloud Files
+{
+ "Details" : "Easily upload and download important files and documents for client, post site, guard, and back office user profiles along with custom description."
+}
+3) Site Tours
+{
+ "Details" : "Create and assign site tours to guards to keep them active on-site. It supports NFC, QR, and Virtual tags which can be programmed easily."
+}
+3) Licenses
+{
+ "Details" : "Enables both back office users and guards to upload licenses and track the expiry dates by getting early notifications before licenses expire."
+}
+3) Custom Settings
+{
+ "Details" : "Get multiple live notifications right within the dashboard. Easily find out when your guards confirm shifts, clock in or out, pick up open shifts, and do more."
+}
+3) Guard Availability
+{
+ "Details" : "Guards can define their weekly availability for the scheduler using their GuardsPro mobile app, so they can schedule them based on that."
+}
+3) Hours By Report
+{
+ "Details" : "Hours by report allows you to filter payroll and time clock results based on clients, post site, skill set, and department for better clarity."
+}
+3) Live Chat Support
+{
+ "Details" : "We at GuardsPro offer live chat support to all our clients to help you resolve all your queries regarding GuadsPro guard tour system."
+}
+3) Autosave Drafts
+{
+ "Details" : "All reports now have an autosave feature that automatically saves the draft while the guard is typing a report and patrolling the client site."
+}
+3) Passdown
+{
+ "Details" : "Allow security guards assigned to a post site to create passdown logs to share important information with other guards on duty."
+}

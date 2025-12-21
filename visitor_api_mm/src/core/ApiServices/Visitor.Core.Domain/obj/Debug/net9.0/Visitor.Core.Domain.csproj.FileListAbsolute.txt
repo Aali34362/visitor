@@ -1,0 +1,12 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\bin\Debug\net9.0\Visitor.Core.Domain.deps.json
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\bin\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\bin\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\refint\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Domain\obj\Debug\net9.0\ref\Visitor.Core.Domain.dll

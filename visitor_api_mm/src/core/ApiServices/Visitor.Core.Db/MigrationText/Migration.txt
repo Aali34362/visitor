@@ -1,0 +1,3 @@
+add-migration IamDbContextPostgres01 -Context IamDbContextPostgres
+
+update-database -Context IamDbContextPostgres

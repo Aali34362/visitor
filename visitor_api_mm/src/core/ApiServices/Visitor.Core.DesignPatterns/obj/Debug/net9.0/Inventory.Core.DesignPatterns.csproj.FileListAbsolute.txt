@@ -1,0 +1,16 @@
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\bin\Debug\net9.0\Inventory.Core.DesignPatterns.deps.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\bin\Debug\net9.0\Inventory.Core.DesignPatterns.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\bin\Debug\net9.0\Inventory.Core.DesignPatterns.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\bin\Debug\net9.0\Inventory.Core.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\bin\Debug\net9.0\Inventory.Core.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.csproj.AssemblyReference.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.AssemblyInfoInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.AssemblyInfo.cs
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.csproj.CoreCompileInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.sourcelink.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventor.2FB8A906.Up2Date
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\refint\Inventory.Core.DesignPatterns.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\Inventory.Core.DesignPatterns.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.DesignPatterns\obj\Debug\net9.0\ref\Inventory.Core.DesignPatterns.dll

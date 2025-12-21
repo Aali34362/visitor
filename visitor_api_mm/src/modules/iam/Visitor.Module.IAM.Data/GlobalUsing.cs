@@ -1,0 +1,10 @@
+﻿global using Visitor.Core.Db.Context;
+global using Visitor.Module.IAM.Domain.Models;
+global using Microsoft.EntityFrameworkCore;
+global using Visitor.Core.Db.ContextExtension;
+global using Visitor.Module.IAM.Data.Context;
+global using Visitor.Module.IAM.Domain.Responses;
+global using Dapper;
+global using Visitor.Core.Domain.Settings;
+global using System.Text;
+global using System.Data;

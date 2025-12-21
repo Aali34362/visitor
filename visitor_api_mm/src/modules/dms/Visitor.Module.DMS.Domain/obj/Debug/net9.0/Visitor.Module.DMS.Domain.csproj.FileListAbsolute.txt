@@ -1,0 +1,17 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Module.DMS.Domain.deps.json
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Module.DMS.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Module.DMS.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Core.DesignPatterns.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Core.DesignPatterns.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\bin\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor..48A0BB38.Up2Date
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\refint\Visitor.Module.DMS.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\Visitor.Module.DMS.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Domain\obj\Debug\net9.0\ref\Visitor.Module.DMS.Domain.dll

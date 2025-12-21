@@ -1,0 +1,16 @@
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\bin\Debug\net9.0\Inventory.Core.WebServices.deps.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\bin\Debug\net9.0\Inventory.Core.WebServices.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\bin\Debug\net9.0\Inventory.Core.WebServices.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\bin\Debug\net9.0\Inventory.Core.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\bin\Debug\net9.0\Inventory.Core.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.csproj.AssemblyReference.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.AssemblyInfoInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.AssemblyInfo.cs
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.csproj.CoreCompileInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.sourcelink.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventor.E72737C2.Up2Date
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\refint\Inventory.Core.WebServices.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\Inventory.Core.WebServices.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\core\ApiServices\Inventory.Core.WebServices\obj\Debug\net9.0\ref\Inventory.Core.WebServices.dll

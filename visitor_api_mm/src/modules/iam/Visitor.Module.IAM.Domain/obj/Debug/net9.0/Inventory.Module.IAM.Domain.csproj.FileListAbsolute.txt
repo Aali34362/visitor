@@ -1,0 +1,16 @@
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\bin\Debug\net9.0\Inventory.Module.IAM.Domain.deps.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\bin\Debug\net9.0\Inventory.Module.IAM.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\bin\Debug\net9.0\Inventory.Module.IAM.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\bin\Debug\net9.0\Inventory.Core.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\bin\Debug\net9.0\Inventory.Core.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.csproj.AssemblyReference.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.AssemblyInfoInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.AssemblyInfo.cs
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.sourcelink.json
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventor.835C7CB3.Up2Date
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\refint\Inventory.Module.IAM.Domain.dll
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\Inventory.Module.IAM.Domain.pdb
+D:\Programming\INFOTER Projects\Inventory\Inventory_Api\src\modules\iam\Inventory.Module.IAM.Domain\obj\Debug\net9.0\ref\Inventory.Module.IAM.Domain.dll

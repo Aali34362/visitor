@@ -1,0 +1,15 @@
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\bin\Debug\net9.0\Visitor.Module.IAM.Domain.deps.json
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\bin\Debug\net9.0\Visitor.Module.IAM.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\bin\Debug\net9.0\Visitor.Module.IAM.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\bin\Debug\net9.0\Visitor.Core.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\bin\Debug\net9.0\Visitor.Core.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.csproj.AssemblyReference.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.AssemblyInfoInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.AssemblyInfo.cs
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor..824BF0DB.Up2Date
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\refint\Visitor.Module.IAM.Domain.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\Visitor.Module.IAM.Domain.pdb
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM.Domain\obj\Debug\net9.0\ref\Visitor.Module.IAM.Domain.dll
