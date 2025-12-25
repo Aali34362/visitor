@@ -11,8 +11,8 @@ public class AppSettings
     public static string EnvironmentName { get; set; }
     public static string WebRootPath { get; set; }
     public static JwtSettings JwtSettings { get; set; } = null!;
+    public static IdentitySettings IdentitySettings { get; set; } = null!;
 }
-
 
 public class DatabaseConnectionSettings
 {
@@ -25,5 +25,14 @@ public class JwtSettings
     public string Authority { get; set; } = null!;
     public string ValidIssuer { get; set; } = null!;
     public string ValidAudience { get; set; } = null!;
-    public string Key { get; set; } = null!;
+}
+
+public class IdentitySettings
+{
+    public string BaseAddress { get; set; } = null!;
+    public string ClientId { get; set; } = null!;
+    public string ClientSecret { get; set; } = null!;
+    public string UserPool { get; set; } = null!;
+    public short accessExpiryMinutes { get; set; }
+    public short refreshExpiryMinutes { get; set; }
 }

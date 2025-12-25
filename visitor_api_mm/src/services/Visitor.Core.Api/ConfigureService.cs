@@ -17,6 +17,10 @@ public static class ConfigureService
         //Add Modules Services
         services.AddIAMModule(configuration);
         services.AddDMSModule(configuration);
+
+        //Identity Token
+        services.AddIdentityAuthorization();
+
         return services;
     }
     

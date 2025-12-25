@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using Visitor.Core.Domain.Settings;
 
 namespace Visitor.Module.IAM.Application.AppServices;
 
@@ -18,31 +19,35 @@ public class TokenGenerationAppService : ITokenGenerationAppService
     private readonly IIdentityUserRoleBusinessService _userRoleBusinessService;
     private readonly SigningCredentials _signingCredentials;
     private readonly TokenValidationParameters _tokenValidationParameters;
-    private readonly string _issuer;
-    private readonly string _audience;
-    private readonly short _accessExpiryMinutes;
-    private readonly short _refreshExpiryMinutes;
-
-    private readonly string _bootstrapToken;
+    //private readonly AppSettings _appSettings;
+    //private readonly string _issuer;
+    //private readonly string _audience;
+    //private readonly short _accessExpiryMinutes;
+    //private readonly short _refreshExpiryMinutes;
+    //private readonly string _bootstrapToken;
 
     public TokenGenerationAppService(
         IValidationService validationService,
         IIdentityUserBusinessService userBusinessService,
         IIdentityUserRoleBusinessService userRoleBusinessService,
         SigningCredentials signingCredentials,
-        TokenValidationParameters tokenValidationParameters,
-        IConfiguration config)
+        TokenValidationParameters tokenValidationParameters
+        //IConfiguration config
+        //AppSettings appSettings
+        )
     {
         _validationService = validationService;
         _userBusinessService = userBusinessService;
         _userRoleBusinessService = userRoleBusinessService;
         _signingCredentials = signingCredentials;
         _tokenValidationParameters = tokenValidationParameters;
-        _issuer = config["Jwt:ValidIssuer"];
-        _audience = config["Jwt:ValidAudience"];
-        _bootstrapToken = config["Jwt:ClientSecret"];
-        _accessExpiryMinutes = config.GetValue<short>("Jwt:accessExpiryMinutes");
-        _refreshExpiryMinutes = config.GetValue<short>("Jwt:refreshExpiryMinutes");
+        ////_issuer = config["Jwt:ValidIssuer"];
+        ////_audience = config["Jwt:ValidAudience"];
+        ////_bootstrapToken = config["Jwt:ClientSecret"];
+        ////_accessExpiryMinutes = config.GetValue<short>("Jwt:accessExpiryMinutes");
+        ////_refreshExpiryMinutes = config.GetValue<short>("Jwt:refreshExpiryMinutes");
+        //_appSettings = appSettings;
+
     }
 
     public async Task<Result<TokenResponse>> GenerateTokenAsync(GenerateTokenCommand command)
@@ -78,7 +83,7 @@ public class TokenGenerationAppService : ITokenGenerationAppService
     private Task<Result<TokenResponse>> HandleClientCredentialsFlow(GenerateTokenCommand command)
     {
         if (string.IsNullOrWhiteSpace(command.ClientSecret) ||
-            !SecureEquals(command.ClientSecret, _bootstrapToken))
+            !SecureEquals(command.ClientSecret, AppSettings.IdentitySettings.ClientSecret))
         {
             return Task.FromResult(Result<TokenResponse>.Failure(
                 ErrorDetail.Business("Invalid client credential", "BootstrapToken")));
@@ -207,20 +212,20 @@ public class TokenGenerationAppService : ITokenGenerationAppService
         };
 
         var accessJwt = new JwtSecurityToken(
-            issuer: _issuer,
-            audience: _audience,
+            issuer: AppSettings.JwtSettings.ValidIssuer,
+            audience: AppSettings.JwtSettings.ValidAudience,
             claims: accessClaims,
             notBefore: now,
-            expires: now.AddMinutes(_accessExpiryMinutes),
+            expires: now.AddMinutes(AppSettings.IdentitySettings.accessExpiryMinutes),
             signingCredentials: _signingCredentials
         );
 
         var refreshJwt = new JwtSecurityToken(
-            issuer: _issuer,
-            audience: _audience,
+            issuer: AppSettings.JwtSettings.ValidIssuer,
+            audience: AppSettings.JwtSettings.ValidAudience,
             claims: refreshClaims,
             notBefore: now,
-            expires: now.AddMinutes(_refreshExpiryMinutes),
+            expires: now.AddMinutes(AppSettings.IdentitySettings.refreshExpiryMinutes),
             signingCredentials: _signingCredentials
         );
 
@@ -229,9 +234,9 @@ public class TokenGenerationAppService : ITokenGenerationAppService
         return new TokenResponse
         {
             Access_Token = handler.WriteToken(accessJwt),
-            Expires_In = _accessExpiryMinutes,
+            Expires_In = AppSettings.IdentitySettings.accessExpiryMinutes,
             Refresh_Token = handler.WriteToken(refreshJwt),
-            Refresh_Expires_In = _refreshExpiryMinutes,
+            Refresh_Expires_In = AppSettings.IdentitySettings.refreshExpiryMinutes,
             Token_Type = "Bearer"
         };
     }

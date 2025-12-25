@@ -29,7 +29,7 @@ public static class ConfigureServices
     {
         // Keep infra stuff here (caching, bus, etc.), but avoid duplicating Db wiring.
         services.AddCoreInfraServices(configuration);
-        services.AddIamJwt(configuration);
+        //services.AddIamJwt(configuration);        
         return services;
     }
 
