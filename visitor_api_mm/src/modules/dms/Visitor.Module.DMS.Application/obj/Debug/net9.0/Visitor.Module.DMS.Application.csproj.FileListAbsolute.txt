@@ -23,3 +23,4 @@ D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modu
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Application\obj\Debug\net9.0\refint\Visitor.Module.DMS.Application.dll
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Application\obj\Debug\net9.0\Visitor.Module.DMS.Application.pdb
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Application\obj\Debug\net9.0\ref\Visitor.Module.DMS.Application.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Application\obj\Debug\net9.0\Visitor.Module.DMS.Application.sourcelink.json

@@ -27,3 +27,4 @@ D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modu
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM\obj\Debug\net9.0\refint\Visitor.Module.IAM.dll
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM\obj\Debug\net9.0\Visitor.Module.IAM.pdb
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM\obj\Debug\net9.0\ref\Visitor.Module.IAM.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\iam\Visitor.Module.IAM\obj\Debug\net9.0\Visitor.Module.IAM.sourcelink.json

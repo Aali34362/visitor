@@ -15,3 +15,4 @@ D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Db\obj\Debug\net9.0\Visitor.Core.Db.pdb
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Db\obj\Debug\net9.0\Visitor.Core.Db.genruntimeconfig.cache
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Db\obj\Debug\net9.0\ref\Visitor.Core.Db.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.Db\obj\Debug\net9.0\Visitor.Core.Db.sourcelink.json

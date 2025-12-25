@@ -25,3 +25,4 @@ D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modu
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Infrastructure\obj\Debug\net9.0\refint\Visitor.Module.DMS.Infrastructure.dll
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Infrastructure\obj\Debug\net9.0\Visitor.Module.DMS.Infrastructure.pdb
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Infrastructure\obj\Debug\net9.0\ref\Visitor.Module.DMS.Infrastructure.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\modules\dms\Visitor.Module.DMS.Infrastructure\obj\Debug\net9.0\Visitor.Module.DMS.Infrastructure.sourcelink.json

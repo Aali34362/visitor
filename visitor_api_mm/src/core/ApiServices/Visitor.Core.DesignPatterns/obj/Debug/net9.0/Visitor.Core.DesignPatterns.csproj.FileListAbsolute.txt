@@ -13,3 +13,4 @@ D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\refint\Visitor.Core.DesignPatterns.dll
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.pdb
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\ref\Visitor.Core.DesignPatterns.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.DesignPatterns\obj\Debug\net9.0\Visitor.Core.DesignPatterns.sourcelink.json

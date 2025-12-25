@@ -13,3 +13,4 @@ D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\refint\Visitor.Core.WebServices.dll
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.pdb
 D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\ref\Visitor.Core.WebServices.dll
+D:\Programming\Asp\AspCore\v8\SecurityManagement\visitor\visitor_api_mm\src\core\ApiServices\Visitor.Core.WebServices\obj\Debug\net9.0\Visitor.Core.WebServices.sourcelink.json
