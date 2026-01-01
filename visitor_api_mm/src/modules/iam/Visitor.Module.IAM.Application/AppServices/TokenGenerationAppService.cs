@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using Visitor.Core.Domain.Settings;
+using Visitor.Module.IAM.Domain.Settings;
 
 namespace Visitor.Module.IAM.Application.AppServices;
 
@@ -12,59 +14,36 @@ public interface ITokenGenerationAppService
     Task<Result<TokenResponse>> GenerateTokenAsync(GenerateTokenCommand command);
 }
 
-public class TokenGenerationAppService : ITokenGenerationAppService
+public class TokenGenerationAppService(
+    IValidationService validationService,
+    IIdentityUserBusinessService userBusinessService,
+    IIdentityUserRoleBusinessService userRoleBusinessService,
+    SigningCredentials signingCredentials,
+    TokenValidationParameters tokenValidationParameters
+    ) : ITokenGenerationAppService
 {
-    private readonly IValidationService _validationService;
-    private readonly IIdentityUserBusinessService _userBusinessService;
-    private readonly IIdentityUserRoleBusinessService _userRoleBusinessService;
-    private readonly SigningCredentials _signingCredentials;
-    private readonly TokenValidationParameters _tokenValidationParameters;
-    //private readonly AppSettings _appSettings;
-    //private readonly string _issuer;
-    //private readonly string _audience;
-    //private readonly short _accessExpiryMinutes;
-    //private readonly short _refreshExpiryMinutes;
-    //private readonly string _bootstrapToken;
-
-    public TokenGenerationAppService(
-        IValidationService validationService,
-        IIdentityUserBusinessService userBusinessService,
-        IIdentityUserRoleBusinessService userRoleBusinessService,
-        SigningCredentials signingCredentials,
-        TokenValidationParameters tokenValidationParameters
-        //IConfiguration config
-        //AppSettings appSettings
-        )
-    {
-        _validationService = validationService;
-        _userBusinessService = userBusinessService;
-        _userRoleBusinessService = userRoleBusinessService;
-        _signingCredentials = signingCredentials;
-        _tokenValidationParameters = tokenValidationParameters;
-        ////_issuer = config["Jwt:ValidIssuer"];
-        ////_audience = config["Jwt:ValidAudience"];
-        ////_bootstrapToken = config["Jwt:ClientSecret"];
-        ////_accessExpiryMinutes = config.GetValue<short>("Jwt:accessExpiryMinutes");
-        ////_refreshExpiryMinutes = config.GetValue<short>("Jwt:refreshExpiryMinutes");
-        //_appSettings = appSettings;
-
-    }
+    private readonly IValidationService _validationService = validationService ?? throw new ArgumentNullException(nameof(validationService));
+    private readonly IIdentityUserBusinessService _userBusinessService = userBusinessService ?? throw new ArgumentNullException(nameof(userBusinessService));
+    private readonly IIdentityUserRoleBusinessService _userRoleBusinessService = userRoleBusinessService ?? throw new ArgumentNullException(nameof(userRoleBusinessService));
+    private readonly SigningCredentials _signingCredentials = signingCredentials ?? throw new ArgumentNullException(nameof(signingCredentials));
+    private readonly TokenValidationParameters _tokenValidationParameters = tokenValidationParameters ?? throw new ArgumentNullException(nameof(tokenValidationParameters));
+    private string _grantType;
 
     public async Task<Result<TokenResponse>> GenerateTokenAsync(GenerateTokenCommand command)
     {
         var validationResult = await _validationService.ValidateAsync(command);
         if (!validationResult.IsSuccess)
             return Result<TokenResponse>.Failure(validationResult.Error);
-
-        switch (command.GrantType.ToLowerInvariant())
+        _grantType = command.GrantType.ToLowerInvariant();
+        switch (_grantType)
         {
-            case "client_credentials":
+            case IAMConstant.client_credentials:
                 return await HandleClientCredentialsFlow(command);
 
-            case "password":
+            case IAMConstant.password:
                 return await HandlePasswordFlow(command);
 
-            case "refresh_token":
+            case IAMConstant.refresh_token:
                 return await HandleRefreshTokenFlow(command);
 
             default:
@@ -94,8 +73,8 @@ public class TokenGenerationAppService : ITokenGenerationAppService
         var claims = new List<Claim>
         {
             new(ClaimTypes.NameIdentifier, serviceName),
-            new(ClaimTypes.Name, "Service.Admin"),
-            new(ClaimTypes.Role, "Service.Admin"),
+            new(ClaimTypes.Name, IAMConstant.Service_Admin),
+            new(ClaimTypes.Role, IAMConstant.Service_Admin),
             new(ClaimTypes.System, serviceName),
             //new("scope", "user.create")
         };
@@ -235,8 +214,12 @@ public class TokenGenerationAppService : ITokenGenerationAppService
         {
             Access_Token = handler.WriteToken(accessJwt),
             Expires_In = AppSettings.IdentitySettings.accessExpiryMinutes,
-            Refresh_Token = handler.WriteToken(refreshJwt),
-            Refresh_Expires_In = AppSettings.IdentitySettings.refreshExpiryMinutes,
+            Refresh_Token = _grantType.Equals(IAMConstant.client_credentials, StringComparison.Ordinal)
+                            ? string.Empty 
+                            : handler.WriteToken(refreshJwt),
+            Refresh_Expires_In = (short)(_grantType.Equals(IAMConstant.client_credentials, StringComparison.Ordinal) 
+                                 ? 0 
+                                 : AppSettings.IdentitySettings.refreshExpiryMinutes),
             Token_Type = "Bearer"
         };
     }
