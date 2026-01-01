@@ -1,0 +1,42 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/visitor_api_mm/.vs/visitor_api_mm
+/visitor_api_mm/src
+
+
+## Ignore build artifacts
+ **/bin/
+ **/obj/
+ **/out/
+ 
+ ## User-specific files
+ *.user
+ *.suo
+ *.userprefs
+ 
+ ## Visual Studio
+ .vs/
+ 
+ ## Rider / JetBrains
+ .idea/
+ 
+ ## VS Code
+ .vscode/
+ 
+ ## Build results
+ *.dll
+ *.exe
+ *.pdb
+ *.cache
+ *.log
+ 
+ ## NuGet
+ *.nupkg
+ packages/
+ 
+ ## Other common
+ *.tmp
+ *.temp
+ *.DS_Store
