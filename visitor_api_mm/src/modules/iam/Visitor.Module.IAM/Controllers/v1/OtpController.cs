@@ -54,3 +54,54 @@ public class OtpController : BaseController
         return Math.Abs(value).ToString("D6");
     }
 }
+/*
+// KycProtector helps mask and hash KYC document numbers
+public static class KycProtector
+ {
+ // secretPepper from a secure store; tenantSalt unique per tenant
+ public static (string masked, string last4, string hashHex) Protect(
+ string docType, string raw, Guid tenantId, string secretPepper, string tenantSalt)
+ {
+ var norm = Normalize(docType, raw);
+ var last4 = new string(norm.TakeLast(4).ToArray());
+ 
+ string masked = docType.ToUpperInvariant() switch
+ {
+ "AADHAAR" => $"XXXX-XXXX-{last4}",
+ "PAN" => $"XXXXX{norm.Substring(5, 4)}X", // ABCDE1234F -> XXXXX1234X
+ "PASSPORT" => MaskKeepLast(norm, 2, 4), // AB******1234
+ "DL" => MaskKeepLast(norm, Math.Min(3, Math.Max(0, norm.Length - 4)), 4),
+ _ => MaskKeepLast(norm, Math.Max(0, norm.Length - 4), 4)
+ };
+ 
+ var hashInput = $"{tenantId}|{docType.ToUpperInvariant()}|{norm}|{tenantSalt}";
+ var hashHex = ToHmacSha256Hex(hashInput, secretPepper);
+ return (masked, last4, hashHex);
+ }
+ 
+ static string Normalize(string docType, string raw)
+ {
+ var s = new string((raw ?? "").Where(char.IsLetterOrDigit).ToArray());
+ s = s.ToUpperInvariant();
+ if (docType.Equals("AADHAAR", StringComparison.OrdinalIgnoreCase) && s.Length >= 12)
+ s = s[^12..]; // keep last 12 if someone sent full; you should prefer VID externally
+ return s;
+ }
+ 
+ static string MaskKeepLast(string s, int keepHead, int keepTail)
+ {
+ if (s.Length <= keepHead + keepTail) return new string('X', s.Length);
+ var head = s[..keepHead];
+ var tail = s[^keepTail..];
+ return head + new string('*', s.Length - keepHead - keepTail) + tail;
+ }
+ 
+ static string ToHmacSha256Hex(string data, string key)
+ {
+ using var h = new System.Security.Cryptography.HMACSHA256(
+ System.Text.Encoding.UTF8.GetBytes(key));
+ var bytes = h.ComputeHash(System.Text.Encoding.UTF8.GetBytes(data));
+ return BitConverter.ToString(bytes).Replace("-", "").ToLowerInvariant();
+ }
+ }
+ */

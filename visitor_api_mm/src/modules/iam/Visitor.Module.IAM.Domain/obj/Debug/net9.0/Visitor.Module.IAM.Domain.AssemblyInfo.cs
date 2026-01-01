@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Visitor.Module.IAM.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5595ab8cb736354ce255c8f5cd65dcb830b0304")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1362bf174c4338e9881c3cd1510deabe2a4597a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Visitor.Module.IAM.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Visitor.Module.IAM.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

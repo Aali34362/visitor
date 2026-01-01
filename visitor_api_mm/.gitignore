@@ -1,72 +1,34 @@
-# =========================
-# Visual Studio
-# =========================
-.vs/
-*.user
-*.rsuser
-*.suo
-*.userosscache
-*.sln.docstates
-
-# =========================
-# Build results
-# =========================
-bin/
-obj/
-[Bb]uild/
-[Bb]in/
-[Oo]bj/
-
-# =========================
-# .NET Core / ASP.NET
-# =========================
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# =========================
-# NuGet
-# =========================
-*.nupkg
-*.snupkg
-packages/
-.nuget/
-
-# =========================
-# Logs
-# =========================
-*.log
-
-# =========================
-# OS files
-# =========================
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-.DS_Store
-
-# =========================
-# IDEs / Editors
-# =========================
-.vscode/
-.idea/
-*.swp
-*.tmp
-
-# =========================
-# Test results
-# =========================
-TestResults/
-coverage/
-coverage.cobertura.xml
-
-# =========================
-# Publish output
-# =========================
-publish/
-
-# =========================
-# Rider
-# =========================
-.idea/
-*.sln.iml
+## Ignore build artifacts
+ **/bin/
+ **/obj/
+ **/out/
+ 
+ ## User-specific files
+ *.user
+ *.suo
+ *.userprefs
+ 
+ ## Visual Studio
+ .vs/
+ 
+ ## Rider / JetBrains
+ .idea/
+ 
+ ## VS Code
+ .vscode/
+ 
+ ## Build results
+ *.dll
+ *.exe
+ *.pdb
+ *.cache
+ *.log
+ 
+ ## NuGet
+ *.nupkg
+ packages/
+ 
+ ## Other common
+ *.tmp
+ *.temp
+ *.DS_Store
