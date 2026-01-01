@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Visitor.Module.IAM.Migrations")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04b7d202c29e11c9cd695f1aee2dd7f13410ef1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76f7f7308ab93246d7640d271bbce4e5049f82ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("Visitor.Module.IAM.Migrations")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Visitor.Module.IAM.Migrations")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -26,7 +26,6 @@ public class OtpController : BaseController
     [HttpGet("otp/validate")]
     public IActionResult ValidateOtp([FromQuery][Required] string address, [Required] string otp, [Required] string transactionId)
     {
-
         if (otpStore.TryGetValue(address, out var storedOtp))
         {
             if (storedOtp.TransactionId == transactionId && storedOtp.Otp == otp && storedOtp.Expiry > DateTime.UtcNow)
