@@ -1,0 +1,145 @@
+﻿============================================================
+Provider & Connection Bootstrapping Flow (Startup)
+
+1. **Configuration Loading**
+   - Load database connection settings from configuration files (e.g., appsettings.json) or environment variables.
+   - Validate the configuration to ensure all required parameters (e.g., connection string, provider type) are present.
+   2. **Provider Selection**
+   - Based on the configuration, determine which database provider to use (e.g., SQL Server, PostgreSQL, MySQL).
+   - Load the corresponding database provider assembly if necessary.
+   3. **Connection Factory Initialization**
+   - Initialize a connection factory that will be responsible for creating database connections.
+   - Configure the factory with the connection string and any provider-specific settings.
+   4. **Dependency Injection Setup**
+   - Register the connection factory and database context in the dependency injection container.
+   - Ensure that the database context is scoped appropriately (e.g., per request in web applications).
+   5. **Database Context Creation**
+   - Create an instance of the database context using the connection factory.
+   - Ensure that the context is configured to use the selected provider and connection settings.
+   6. **Connection Pooling Configuration**
+   - Configure connection pooling settings to optimize performance and resource usage.
+   - Set parameters such as maximum pool size, minimum pool size, and connection timeout.
+   7. **Health Check Integration**
+   - Integrate database health checks into the application’s health monitoring system.
+   - Implement periodic checks to ensure the database connection is healthy and responsive.
+   8. **Error Handling and Logging**
+   - Implement error handling mechanisms to catch and log connection-related issues.
+   - Ensure that detailed logs are available for troubleshooting connection problems.
+   9. **Testing the Connection**
+   - Perform an initial test connection to the database to verify that the setup is correct.
+   - Log the result of the test connection for auditing purposes.
+   10. **Finalization**
+   - Complete the bootstrapping process and make the database context available for use in the application.
+
+appsettings.json
+   ↓
+DatabaseConnectionSettings:Provider
+   ↓
+AddSqlServiceContext()
+   ↓
+IDatabaseService (Singleton)
+   ↓
+BaseSqlService<TConnection>
+   ↓
+MySqlService / PostGreSqlService / SqlServerService
+============================================================
+DB Connection Lifecycle
+1. **Connection Request**
+   - An application component requests a database connection from the connection factory or database context.
+   2. **Connection Creation**
+   - The connection factory checks the connection pool for an available connection.
+   - If no available connection exists, a new connection is created using the configured connection string and provider settings.
+   3. **Connection Opening**
+   - The connection is opened, establishing a link to the database server.
+   4. **Connection Usage**
+   - The application component uses the open connection to execute database commands (e.g., queries, stored procedures).
+   5. **Connection Monitoring**
+   - Monitor the connection for any errors or timeouts during its usage.
+   6. **Connection Closing**
+   - Once the database operations are complete, the connection is closed.
+   - If connection pooling is enabled, the connection is returned to the pool for reuse.
+   7. **Connection Pooling**
+   - The connection pool manages a set of open connections to optimize performance.
+   - Connections in the pool are reused for future requests, reducing the overhead of creating new connections.
+   8. **Connection Disposal**
+   - If a connection is deemed unhealthy or exceeds its maximum lifetime, it is disposed of and removed from the pool.
+   9. **Error Handling**
+   - Implement error handling to manage connection failures, timeouts, and other issues.
+   - Log any connection-related errors for troubleshooting.
+   10. **Connection Finalization**
+   - Ensure that all connections are properly closed and disposed of when the application shuts down or when they are no longer needed.
+   Application Component
+    ↓
+    Request Connection
+    ↓
+    Connection Factory / DbContext
+    ↓
+    Check Connection Pool
+    ↓
+    Create New Connection (if needed)
+    ↓
+    Open Connection
+    ↓
+    Use Connection
+    ↓
+    Close Connection
+    ↓
+    Return to Pool (if pooling enabled)
+    ↓
+    Dispose Connection (if unhealthy)
+
+
+(Dapper Path)
+Controller
+   ↓
+DataLayerService.GetByIdAsync
+   ↓
+DbContextFactory.CreateDbContextAsync()
+   ↓
+IAMServiceContext
+   ↓
+Database.GetDbConnection()
+   ↓
+Dapper.QueryFirstOrDefaultAsync()
+   ↓
+Connection auto-closed
+
+
+(EF Core Write Path)
+Controller
+   ↓
+IdentityModuleDataLayerService
+   ↓
+DbContextFactory.CreateDbContextAsync()
+   ↓
+BeginTransactionAsync()
+   ↓
+EF Change Tracking
+   ↓
+SaveChangesAsync()
+   ↓
+CommitTransactionAsync()
+   ↓
+Dispose Transaction + Context
+============================================================
+Complete End-to-End Flow
+HTTP Request
+   ↓
+Controller
+   ↓
+Application Service
+   ↓
+DataLayerService
+   ↓
+DbContextFactory
+   ↓
+ ┌───────────────┬────────────────┐
+ │ DAPPER (READ) │ EF CORE (WRITE)│
+ │               │                │
+ │ GetDbConn()   │ BeginTx()      │
+ │ QueryAsync()  │ Track Entity   │
+ │ Map DTO       │ SaveChanges()  │
+ │ Return        │ Commit/Rollback│
+ └───────────────┴────────────────┘
+   ↓
+Response

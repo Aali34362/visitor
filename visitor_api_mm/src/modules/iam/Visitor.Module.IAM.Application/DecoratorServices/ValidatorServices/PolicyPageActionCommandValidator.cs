@@ -41,7 +41,7 @@ public class CreatePolicyPageActionCommandValidator : AbstractValidator<CreatePo
                 if (policy is null || pageAction is null)
                     return true; // Let other rules handle existence error
 
-                var exists = await _businessService.IsPolicyPageActionMappingExistsAsync(policy.Id, pageAction.Id);
+                var exists = await _businessService.IsPolicyPageActionMappingExistsAsync(policy.id, pageAction.id);
                 return !exists;
             }).WithMessage(x => $"Mapping for '{x.Policy_Nm}' and '{x.PageAction_Nm}' already exists.");
     }
@@ -91,7 +91,7 @@ public class UpdatePolicyPageActionCommandValidator : AbstractValidator<UpdatePo
                 if (policy is null || pageAction is null)
                     return true; // Let other rules handle existence error
 
-                var exists = await _businessService.IsPolicyPageActionMappingExistsAsync(policy.Id, pageAction.Id);
+                var exists = await _businessService.IsPolicyPageActionMappingExistsAsync(policy.id, pageAction.id);
                 return !exists;
             }).WithMessage(x => $"Mapping for '{x.Policy_Nm}' and '{x.PageAction_Nm}' already exists.");
     }

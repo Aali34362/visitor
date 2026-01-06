@@ -2,6 +2,6 @@
 
 public class IdentityUserRoleMapping : BaseModel
 {
-    public Guid User_Id { get; set; }
-    public Guid Role_Id { get; set; }
+    public Guid user_Id { get; set; }
+    public Guid role_Id { get; set; }
 }

@@ -2,6 +2,6 @@
 
 public class IdentityRolePolicyMappingList : BaseResponse
 {
-    public string Policy_Nm { get; set; } = null!;
-    public string Role_Nm { get; set; } = null!;
+    public string policy_Nm { get; set; } = null!;
+    public string role_Nm { get; set; } = null!;
 }

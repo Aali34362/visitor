@@ -56,9 +56,9 @@ public class IdentityUserAppService : IIdentityUserAppService
             return Result<bool>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {command.Id!}", propertyName: nameof(IdentityUser)));
 
         var User = _mapper.Map<UpdateUserCommand, IdentityUser>(command);
-        User.UserName = data.UserName; 
-        User.CreatedAt = data.UpdatedAt;
-        User.CreatedBy = data.UpdatedBy; 
+        User.user_Nm = data.user_Nm; 
+        User.created_At = data.updated_At;
+        User.created_By = data.updated_By; 
 
         return await _businessService.UpdateAsync(User);
     }

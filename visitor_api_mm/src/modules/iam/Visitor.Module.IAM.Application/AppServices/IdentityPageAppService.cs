@@ -40,9 +40,9 @@ public class IdentityPageAppService : IIdentityPageAppService
         var module = await _moduleBusinessService.GetByNameAsync(command.Module_Nm);
 
         var Page = _mapper.Map<CreatePageCommand, IdentityPage>(command);
-        Page.Module_Id = module.Id;
-        if(Page.Page_Level == 1)
-            Page.Parent_Id = Guid.Empty; // Set Parent_Id to null for top-level pages
+        Page.module_Id = module.id;
+        if(Page.page_Level == 1)
+            Page.parent_Id = Guid.Empty; // Set Parent_Id to null for top-level pages
 
         return await _businessService.CreateAsync(Page);
     }
@@ -58,13 +58,13 @@ public class IdentityPageAppService : IIdentityPageAppService
             return Result<bool>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {command.Id!}", propertyName: nameof(IdentityPage)));
 
         // Re-fetch Module by name to get the ID
-        var module = await _moduleBusinessService.GetByNameAsync(data.Module_Nm);
+        var module = await _moduleBusinessService.GetByNameAsync(data.module_Nm);
 
         var Page = _mapper.Map<UpdatePageCommand, IdentityPage>(command);
-        Page.Module_Id = module.Id;
-        Page.Page_Nm = data.Page_Nm; // Preserve the original name if not changed
-        Page.CreatedAt = data.UpdatedAt; // Preserve the original creation date
-        Page.CreatedBy = data.UpdatedBy; // Preserve the original creator
+        Page.module_Id = module.id;
+        Page.page_Nm = data.page_Nm; // Preserve the original name if not changed
+        Page.created_At = data.updated_At; // Preserve the original creation date
+        Page.created_By = data.updated_By; // Preserve the original creator
 
         return await _businessService.UpdateAsync(Page);
     }
@@ -87,7 +87,7 @@ public class IdentityPageAppService : IIdentityPageAppService
             var module = await _moduleBusinessService.GetByNameAsync(query.Module_Nm);
             if (module is null)
                 return Result<PaginatedList<IdentityPageList>>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {query.Module_Nm} ", propertyName: nameof(IdentityModule)));
-            Page.Module_Id = module.Id;
+            Page.module_Id = module.id;
         }
 
         var data = await _businessService.GetAllAsync(Page, query.index, query.size);

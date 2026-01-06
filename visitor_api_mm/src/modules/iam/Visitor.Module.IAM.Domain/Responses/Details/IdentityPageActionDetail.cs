@@ -2,9 +2,9 @@
 
 public class IdentityPageActionDetail : BaseResponse
 {     
-    public string Name { get; set; }
-    public string Action { get; set; }
-    public string AccessLevel { get; set; }
-    public string PageUrl { get; set; }
-    public string Page_Nm { get; set; } = null!;
+    public string name { get; set; }
+    public string action { get; set; }
+    public string access_Level { get; set; }
+    public string page_Url { get; set; }
+    public string page_Nm { get; set; } = null!;
 }

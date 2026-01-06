@@ -31,10 +31,10 @@ public static class UserContextExtension
         var whereClause = new StringBuilder("WHERE IsDeleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (!string.IsNullOrEmpty(dto.UserName))
+        if (!string.IsNullOrEmpty(dto.user_Nm))
         {
             whereClause.Append(" AND LOWER(UserName) = @UserName");
-            parameters.Add("UserName", dto.UserName.ToLower());
+            parameters.Add("UserName", dto.user_Nm.ToLower());
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -60,21 +60,21 @@ public static class UserContextExtension
 
     public static async Task<IdentityUser> GetUserByNameAsync(this IAMServiceContext _dbContext, string User_Nm)
     {
-        System.Linq.Expressions.Expression<Func<IdentityUser, bool>> predicate = a => a.UserName == User_Nm;
+        System.Linq.Expressions.Expression<Func<IdentityUser, bool>> predicate = a => a.user_Nm == User_Nm;
         var userDetails = await _dbContext.IdentityUser.AsNoTracking().FirstOrDefaultAsync(predicate);
         return userDetails!;
     }
 
     public static async Task<IdentityUser> ValidateUserPasswordAsync(this IAMServiceContext _dbContext, string User_Nm, string password)
     {
-        System.Linq.Expressions.Expression<Func<IdentityUser, bool>> predicate = a => a.UserName == User_Nm & a.PasswordHash == password;
+        System.Linq.Expressions.Expression<Func<IdentityUser, bool>> predicate = a => a.user_Nm == User_Nm & a.password_Hash == password;
         var userDetails = await _dbContext.IdentityUser.AsNoTracking().FirstOrDefaultAsync(predicate);
         return userDetails!;
     }
 
     public static async Task<bool> emailExistsAsync(this IAMServiceContext _dbContext, string email)
     {
-        System.Linq.Expressions.Expression<Func<IdentityUser, bool>> predicate = a => a.Email == email;
+        System.Linq.Expressions.Expression<Func<IdentityUser, bool>> predicate = a => a.email == email;
         var exist = await _dbContext.IdentityUser.AsNoTracking().AnyAsync(predicate);
         return exist;
     }

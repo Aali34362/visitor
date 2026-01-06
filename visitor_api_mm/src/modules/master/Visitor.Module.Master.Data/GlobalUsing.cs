@@ -1,0 +1,9 @@
+﻿global using Dapper;
+global using Microsoft.EntityFrameworkCore;
+global using System.Text;
+global using Visitor.Core.Db.Context;
+global using Visitor.Core.Db.ContextExtension;
+global using Visitor.Core.Domain.Settings;
+global using Visitor.Module.Master.Data.Context;
+global using Visitor.Module.Master.Domain.Models;
+global using Visitor.Module.Master.Domain.Responses;

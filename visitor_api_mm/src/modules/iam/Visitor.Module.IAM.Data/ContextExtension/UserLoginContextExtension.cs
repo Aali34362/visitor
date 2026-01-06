@@ -16,16 +16,16 @@ public static class UserLoginLoginContextExtension
         var whereClause = new StringBuilder("WHERE ul.IsDeleted = FALSE AND u.IsDeleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (dto.User_Id != Guid.Empty)
+        if (dto.user_Id != Guid.Empty)
         {
             whereClause.Append(" AND ul.User_Id = @User_Id");
-            parameters.Add("User_Id", dto.User_Id);
+            parameters.Add("User_Id", dto.user_Id);
         }
 
-        if (dto.Session_Id != Guid.Empty)
+        if (dto.session_Id != Guid.Empty)
         {
             whereClause.Append(" AND ul.Session_Id = @Session_Id");
-            parameters.Add("Session_Id", dto.Session_Id);
+            parameters.Add("Session_Id", dto.session_Id);
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -55,7 +55,7 @@ public static class UserLoginLoginContextExtension
 
     public static async Task<IdentityUserLogin> GetUserLoginByIdAsync(this IAMServiceContext _dbContext, Guid id)
     {
-        System.Linq.Expressions.Expression<Func<IdentityUserLogin, bool>> predicate = a => a.Id == id;
+        System.Linq.Expressions.Expression<Func<IdentityUserLogin, bool>> predicate = a => a.id == id;
         var userLoginDetails = await _dbContext.IdentityUserLogin.AsNoTracking().FirstOrDefaultAsync(predicate);
         return userLoginDetails!;
     }

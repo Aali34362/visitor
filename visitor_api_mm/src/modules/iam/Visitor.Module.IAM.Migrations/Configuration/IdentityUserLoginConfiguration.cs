@@ -5,10 +5,10 @@ public class IdentityUserLoginConfiguration : BasePostGreSqlConfiguration<Identi
     public override void Configure(EntityTypeBuilder<IdentityUserLogin> entity)
     {
         base.Configure(entity);
-        entity.Property(e => e.Login_Source_Sytem)
+        entity.Property(e => e.login_Source_Sytem)
             .HasMaxLength(MaxLengthValues.LoginSourceSystem)
             .IsUnicode(false);
-        entity.Property(e => e.Login_Source_Sytem_Ip)
+        entity.Property(e => e.login_Source_Sytem_Ip)
             .HasMaxLength(MaxLengthValues.LoginSourceSystemIp)
             .IsUnicode(false);
     }

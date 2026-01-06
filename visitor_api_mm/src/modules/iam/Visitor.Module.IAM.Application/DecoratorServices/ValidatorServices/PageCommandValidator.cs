@@ -58,7 +58,7 @@ public class CreatePageCommandValidator : AbstractValidator<CreatePageCommand>
                 if (parentPage == null)
                     return true; // skip; handled in previous rule
 
-                return command.Page_Level > parentPage.Page_Level;
+                return command.Page_Level > parentPage.page_Level;
             })
             .WithMessage(x =>
                 $"Page level ({x.Page_Level}) must be greater than parent’s level for Parent ID {x.Parent_Id}.")
@@ -115,7 +115,7 @@ public class UpdatePageCommandValidator : AbstractValidator<UpdatePageCommand>
                 if (parentPage == null)
                     return true; // skip; handled in previous rule
 
-                return command.Page_Level > parentPage.Page_Level;
+                return command.Page_Level > parentPage.page_Level;
             })
             .WithMessage(x =>
                 $"Page level ({x.Page_Level}) must be greater than parent’s level for Parent ID {x.Parent_Id}.")

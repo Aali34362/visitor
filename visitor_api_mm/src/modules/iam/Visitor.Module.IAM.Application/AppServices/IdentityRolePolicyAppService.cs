@@ -46,8 +46,8 @@ public class IdentityRolePolicyAppService : IIdentityRolePolicyAppService
 
         var mapping = new IdentityRolePolicyMapping
         {
-            Policy_Id = policy.Id,
-            Role_Id = role.Id
+            policy_Id = policy.id,
+            role_Id = role.id
         };
 
         return await _businessService.CreateAsync(mapping);
@@ -70,11 +70,11 @@ public class IdentityRolePolicyAppService : IIdentityRolePolicyAppService
 
         var updated = new IdentityRolePolicyMapping
         {
-            Id = command.Id,
-            Policy_Id = policy.Id,
-            Role_Id = role.Id,
-            CreatedAt = existing.UpdatedAt,
-            CreatedBy = existing.UpdatedBy
+            id = command.Id,
+            policy_Id = policy.id,
+            role_Id = role.id,
+            created_At = existing.updated_At,
+            created_By = existing.updated_By
         };
 
         return await _businessService.UpdateAsync(updated);
@@ -103,7 +103,7 @@ public class IdentityRolePolicyAppService : IIdentityRolePolicyAppService
                     $"{CustomMessages.RECORD_NOT_FOUND} : {query.Policy_Nm}",
                     nameof(IdentityRolePolicyMapping)));
 
-            policyId = policy.Id;
+            policyId = policy.id;
         }
 
         if (!string.IsNullOrWhiteSpace(query.Role_Nm))
@@ -114,13 +114,13 @@ public class IdentityRolePolicyAppService : IIdentityRolePolicyAppService
                     $"{CustomMessages.RECORD_NOT_FOUND} : {query.Role_Nm}",
                     nameof(IdentityRolePolicyMapping)));
 
-            roleId = role.Id;
+            roleId = role.id;
         }
 
         var data = await _businessService.GetAllAsync(new IdentityRolePolicyMapping
         {
-            Policy_Id = policyId,
-            Role_Id = roleId
+            policy_Id = policyId,
+            role_Id = roleId
         }, query.index, query.size);
 
         if (data is null)

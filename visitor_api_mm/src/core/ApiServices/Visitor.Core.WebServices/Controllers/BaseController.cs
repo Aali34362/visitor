@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using System.Net.Mime;
+using Visitor.Core.DesignPatterns.ResultPattern;
 
 namespace Visitor.Core.ApiServices.Controllers;
 
@@ -22,5 +23,16 @@ public abstract class BaseController : Controller
     public override void OnActionExecuted(ActionExecutedContext context)
     {
         base.OnActionExecuted(context);
+    }
+
+    protected IActionResult HandleResult<T>(Result<T> result)
+    {
+        if (!result.IsSuccess)
+        {
+            if (result.Error?.Type == ErrorTypeValues.NotFound)
+                return NotFound(result.Error);
+            return BadRequest(result.Error);
+        }
+        return Ok(result.Value);
     }
 }

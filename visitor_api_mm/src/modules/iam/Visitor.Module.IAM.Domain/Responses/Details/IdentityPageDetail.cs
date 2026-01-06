@@ -2,12 +2,12 @@
 
 public class IdentityPageDetail : BaseResponse
 {
-    public Guid Parent_Id { get; set; }
-    public int Page_Level { get; set; }
-    public string Page_Title { get; set; } = null!;
-    public string Page_Url { get; set; } = null!;
-    public int Page_Order { get; set; }
-    public string Page_Nm { get; set; } = null!;
-    public string Icon { get; set; }
-    public string Module_Nm { get; set; } = null!;
+    public Guid parent_Id { get; set; }
+    public int page_Level { get; set; }
+    public string page_Title { get; set; } = null!;
+    public string page_Url { get; set; } = null!;
+    public int page_Order { get; set; }
+    public string page_Nm { get; set; } = null!;
+    public string icon { get; set; }
+    public string module_Nm { get; set; } = null!;
 }

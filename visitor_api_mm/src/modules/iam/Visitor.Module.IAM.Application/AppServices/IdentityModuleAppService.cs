@@ -51,9 +51,9 @@ public class IdentityModuleAppService : IIdentityModuleAppService
             return Result<bool>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {command.Id!}", propertyName: nameof(IdentityModule)));
 
         var module = _mapper.Map<UpdateModuleCommand, IdentityModule>(command);
-        module.Name = data.Name; // Preserve the original name if not changed
-        module.CreatedAt = data.UpdatedAt; // Preserve the original creation date
-        module.CreatedBy = data.UpdatedBy; // Preserve the original creator
+        module.name = data.name; // Preserve the original name if not changed
+        module.created_At = data.updated_At; // Preserve the original creation date
+        module.created_By = data.updated_By; // Preserve the original creator
 
         return await _businessService.UpdateAsync(module);
     }

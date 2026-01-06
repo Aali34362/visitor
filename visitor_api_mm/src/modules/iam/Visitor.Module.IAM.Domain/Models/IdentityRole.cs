@@ -2,7 +2,7 @@
 
 public class IdentityRole : BaseModel
 {
-    public string Name { get; set; } = null!;
-    public string Tags { get; set; }
+    public string name { get; set; } = null!;
+    public string tags { get; set; }
 }
 

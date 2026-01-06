@@ -36,19 +36,19 @@ public static class PageActionContextExtension
 
     public static async Task<PaginatedList<IdentityPageActionList>> GetPageActionListAsync(this IAMServiceContext _dbContext, IdentityPageAction dto, int index, int size)
     {
-        var whereClause = new StringBuilder("WHERE pa.IsDeleted = FALSE AND p.IsDeleted = FALSE");
+        var whereClause = new StringBuilder("WHERE pa.is_Deleted = FALSE AND p.is_Deleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (!string.IsNullOrEmpty(dto.Name))
+        if (!string.IsNullOrEmpty(dto.name))
         {
             whereClause.Append(" AND LOWER(p.Name) = @Name");
-            parameters.Add("Name", dto.Name.ToLower());
+            parameters.Add("Name", dto.name.ToLower());
         }
 
-        if (!string.IsNullOrEmpty(dto.Action))
+        if (!string.IsNullOrEmpty(dto.action))
         {
             whereClause.Append(" AND LOWER(p.Action) = @Action");
-            parameters.Add("Action", dto.Action.ToLower());
+            parameters.Add("Action", dto.action.ToLower());
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -81,7 +81,7 @@ public static class PageActionContextExtension
 
     public static async Task<IdentityPageAction> GetPageActionByNameAsync(this IAMServiceContext _dbContext, string Name)
     {
-        System.Linq.Expressions.Expression<Func<IdentityPageAction, bool>> predicate = a => a.Name == Name;
+        System.Linq.Expressions.Expression<Func<IdentityPageAction, bool>> predicate = a => a.name == Name;
         var moduleDetails = await _dbContext.IdentityPageAction.AsNoTracking().FirstOrDefaultAsync(predicate);
         return moduleDetails!;
     }
@@ -90,32 +90,32 @@ public static class PageActionContextExtension
     {
         var baseQuery = _dbContext.IdentityPageAction.AsNoTracking().AsQueryable();
 
-        if (!string.IsNullOrEmpty(dto.Name))
-            baseQuery = baseQuery.Where(x => x.Name == dto.Name);
+        if (!string.IsNullOrEmpty(dto.name))
+            baseQuery = baseQuery.Where(x => x.name == dto.name);
 
-        if (!string.IsNullOrEmpty(dto.Action))
-            baseQuery = baseQuery.Where(x => x.Action == dto.Action);
+        if (!string.IsNullOrEmpty(dto.action))
+            baseQuery = baseQuery.Where(x => x.action == dto.action);
 
-        if (dto.Page_Id != Guid.Empty)
-            baseQuery = baseQuery.Where(x => x.Page_Id == dto.Page_Id);
+        if (dto.page_Id != Guid.Empty)
+            baseQuery = baseQuery.Where(x => x.page_Id == dto.page_Id);
 
         var joinedQuery = from a in baseQuery
                           join p in _dbContext.IdentityPage.AsNoTracking()
-                          on a.Page_Id equals p.Id
+                          on a.page_Id equals p.id
                           select new { a, p };
 
-        return await joinedQuery.OrderByDescending(x => x.a.UpdatedAt)
+        return await joinedQuery.OrderByDescending(x => x.a.updated_At)
                         .Select(x => new IdentityPageActionList
                         {
-                            Id = x.a.Id,
-                            Name = x.a.Name,
-                            Action = x.a.Action,
-                            AccessLevel = x.a.AccessLevel,
-                            PageUrl = x.a.PageUrl,
-                            Page_Nm = x.p.Page_Nm,
-                            Act_Ind = x.a.Act_Ind,
-                            UpdatedAt = x.a.UpdatedAt,
-                            UpdatedBy = x.a.UpdatedBy
+                            id = x.a.id,
+                            name = x.a.name,
+                            action = x.a.action,
+                            access_Level = x.a.access_Level,
+                            page_Url = x.a.page_Url,
+                            page_Nm = x.p.page_Nm,
+                            act_Ind = x.a.act_Ind,
+                            updated_At = x.a.updated_At,
+                            updated_By = x.a.updated_By
                         })
                         .ToListAsync();
     }

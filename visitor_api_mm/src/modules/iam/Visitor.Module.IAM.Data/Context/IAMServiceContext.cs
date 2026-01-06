@@ -29,15 +29,15 @@ public partial class IAMServiceContext : BaseDbContext
         modelBuilder.HasDefaultSchema("iam");
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-        modelBuilder.Entity<IdentityModule>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityPage>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityPageAction>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityPolicy>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityPolicyPageActionMapping>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityRole>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityRolePolicyMapping>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityUser>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityUserLogin>().HasQueryFilter(e => !e.IsDeleted);
-        modelBuilder.Entity<IdentityUserRoleMapping>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<IdentityModule>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityPage>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityPageAction>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityPolicy>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityPolicyPageActionMapping>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityRole>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityRolePolicyMapping>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityUser>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityUserLogin>().HasQueryFilter(e => !e.is_Deleted);
+        modelBuilder.Entity<IdentityUserRoleMapping>().HasQueryFilter(e => !e.is_Deleted);
     }
 }

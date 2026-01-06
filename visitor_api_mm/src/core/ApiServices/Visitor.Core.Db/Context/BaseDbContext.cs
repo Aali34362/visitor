@@ -89,34 +89,34 @@ public abstract class BaseDbContext(DbContextOptions contextOptions) : DbContext
 
         foreach (var entry in entries)
         {
-            entry.Entity.UpdatedAt = now;
-            entry.Entity.UpdatedBy = user.UserName;
+            entry.Entity.updated_At = now;
+            entry.Entity.updated_By = user.UserName;
             switch (entry.State)
             {
                 case EntityState.Added:
-                    entry.Entity.CreatedAt = now;
-                    entry.Entity.CreatedBy = user.UserName;
+                    entry.Entity.created_At = now;
+                    entry.Entity.created_By = user.UserName;
                     break;
 
                 case EntityState.Modified:
-                    entry.Property(nameof(BaseModel.CreatedBy)).IsModified = false;
-                    entry.Property(nameof(BaseModel.CreatedAt)).IsModified = false;
-                    entry.Property(nameof(BaseModel.Act_Ind)).IsModified = false;
-                    entry.Property(nameof(BaseModel.IsDeleted)).IsModified = false;
+                    entry.Property(nameof(BaseModel.created_By)).IsModified = false;
+                    entry.Property(nameof(BaseModel.created_At)).IsModified = false;
+                    entry.Property(nameof(BaseModel.act_Ind)).IsModified = false;
+                    entry.Property(nameof(BaseModel.is_Deleted)).IsModified = false;
                     break;
 
                 case EntityState.Deleted:
                     entry.State = EntityState.Modified;
-                    entry.Entity.Act_Ind = 0;
-                    entry.Entity.IsDeleted = true;
+                    entry.Entity.act_Ind = 0;
+                    entry.Entity.is_Deleted = true;
 
-                    entry.Property(nameof(BaseModel.Act_Ind)).IsModified = true;
-                    entry.Property(nameof(BaseModel.IsDeleted)).IsModified = true;
-                    entry.Property(nameof(BaseModel.UpdatedAt)).IsModified = true;
-                    entry.Property(nameof(BaseModel.UpdatedBy)).IsModified = true;
+                    entry.Property(nameof(BaseModel.act_Ind)).IsModified = true;
+                    entry.Property(nameof(BaseModel.is_Deleted)).IsModified = true;
+                    entry.Property(nameof(BaseModel.updated_At)).IsModified = true;
+                    entry.Property(nameof(BaseModel.updated_By)).IsModified = true;
 
-                    entry.Property(nameof(BaseModel.CreatedBy)).IsModified = false;
-                    entry.Property(nameof(BaseModel.CreatedAt)).IsModified = false;
+                    entry.Property(nameof(BaseModel.created_By)).IsModified = false;
+                    entry.Property(nameof(BaseModel.created_At)).IsModified = false;
                     break;
 
                 ////case EntityState.Unchanged:

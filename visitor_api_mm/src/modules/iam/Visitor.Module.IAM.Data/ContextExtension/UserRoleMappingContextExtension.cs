@@ -61,16 +61,16 @@ public static class UserRoleContextExtension
         var whereClause = new StringBuilder("WHERE ur.IsDeleted = FALSE AND u.IsDeleted = FALSE AND r.IsDeleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (dto.User_Id != Guid.Empty)
+        if (dto.user_Id != Guid.Empty)
         {
             whereClause.Append(" AND ur.User_Id = @UserId");
-            parameters.Add("UserId", dto.User_Id);
+            parameters.Add("UserId", dto.user_Id);
         }
 
-        if (dto.Role_Id != Guid.Empty)
+        if (dto.role_Id != Guid.Empty)
         {
             whereClause.Append(" AND ur.Role_Id = @RoleId");
-            parameters.Add("RoleId", dto.Role_Id);
+            parameters.Add("RoleId", dto.role_Id);
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -123,22 +123,22 @@ public static class UserRoleContextExtension
     {
         var baseQuery = _dbContext.IdentityUserRoleMapping.AsNoTracking().AsQueryable();
 
-        baseQuery = baseQuery.Where(x => x.Id == id);
+        baseQuery = baseQuery.Where(x => x.id == id);
 
         var joinedQuery = from ur in baseQuery
-                          join u in _dbContext.IdentityUser.AsNoTracking() on ur.User_Id equals u.Id
-                          join r in _dbContext.IdentityRole.AsNoTracking() on ur.Role_Id equals r.Id
+                          join u in _dbContext.IdentityUser.AsNoTracking() on ur.user_Id equals u.id
+                          join r in _dbContext.IdentityRole.AsNoTracking() on ur.role_Id equals r.id
                           select new { ur, u, r };
 
         var result = await joinedQuery
             .Select(x => new IdentityUserRoleMappingList
             {
-                Id = x.ur.Id,
-                User_Nm = x.u.UserName,
-                Role_Nm = x.r.Name,
-                UpdatedAt = x.ur.UpdatedAt,
-                UpdatedBy = x.ur.UpdatedBy,
-                Act_Ind = x.ur.Act_Ind
+                id = x.ur.id,
+                user_Nm = x.u.user_Nm,
+                role_Nm = x.r.name,
+                updated_At = x.ur.updated_At,
+                updated_By = x.ur.updated_By,
+                act_Ind = x.ur.act_Ind
             })
             .ToListAsync();
         return result;
@@ -147,7 +147,7 @@ public static class UserRoleContextExtension
 
     public static async Task<bool> IsUserRoleMappingExistsAsync(this IAMServiceContext _dbContext, Guid user_id, Guid role_id)
     {
-        System.Linq.Expressions.Expression<Func<IdentityUserRoleMapping, bool>> predicate = a => a.User_Id == user_id & a.Role_Id == role_id;
+        System.Linq.Expressions.Expression<Func<IdentityUserRoleMapping, bool>> predicate = a => a.user_Id == user_id & a.role_Id == role_id;
         var exist = await _dbContext.IdentityUserRoleMapping.AsNoTracking().AnyAsync(predicate);
         return exist;
     }

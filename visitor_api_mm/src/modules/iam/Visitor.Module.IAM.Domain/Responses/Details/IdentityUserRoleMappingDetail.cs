@@ -2,6 +2,6 @@
 
 public class IdentityUserRoleMappingDetail : BaseResponse
 {
-    public string User_Nm { get; set; } = null!;
-    public string Role_Nm { get; set; } = null!;
+    public string user_Nm { get; set; } = null!;
+    public string role_Nm { get; set; } = null!;
 }

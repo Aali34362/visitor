@@ -101,7 +101,7 @@ public class TokenGenerationAppService(
                 ErrorDetail.Business("Invalid username/password", "Username"));
         }
 
-        var roles = await _userRoleBusinessService.GetAllAsync(new() { User_Id = user.Id }, 1, 100);
+        var roles = await _userRoleBusinessService.GetAllAsync(new() { user_Id = user.id }, 1, 100);
 
         var serviceName = string.IsNullOrWhiteSpace(command.ClientId)
            ? "svc.bootstrap"
@@ -109,12 +109,12 @@ public class TokenGenerationAppService(
 
         var claims = new List<Claim>
         {
-            new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new(ClaimTypes.Email, user.Email.ToString()),
+            new(ClaimTypes.NameIdentifier, user.id.ToString()),
+            new(ClaimTypes.Email, user.email.ToString()),
             new(ClaimTypes.System, serviceName),
-            new(ClaimTypes.Name, user.UserName)
+            new(ClaimTypes.Name, user.user_Nm)
         };
-        claims.AddRange(roles.Items.Select(r => new Claim(ClaimTypes.Role, r.Role_Nm)));
+        claims.AddRange(roles.Items.Select(r => new Claim(ClaimTypes.Role, r.role_Nm)));
 
         var token = GenerateToken(claims); // always issues refresh, see method
         return Result<TokenResponse>.Success(token);
@@ -150,7 +150,7 @@ public class TokenGenerationAppService(
                 ErrorDetail.Business("User not found", "sub"));
         }
 
-        var roles = await _userRoleBusinessService.GetAllAsync(new() { User_Id = user.Id }, 1, 100);
+        var roles = await _userRoleBusinessService.GetAllAsync(new() { user_Id = user.id }, 1, 100);
 
         // preserve correlation_id from refresh token if present
         Guid? existingCorrelation = null;
@@ -163,12 +163,12 @@ public class TokenGenerationAppService(
 
         var claims = new List<Claim>
         {
-            new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new(ClaimTypes.Email, user.Email.ToString()),
+            new(ClaimTypes.NameIdentifier, user.id.ToString()),
+            new(ClaimTypes.Email, user.email.ToString()),
             new(ClaimTypes.System, serviceName),
-            new(ClaimTypes.Name, user.UserName)
+            new(ClaimTypes.Name, user.user_Nm)
         };
-        claims.AddRange(roles.Items.Select(r => new Claim(ClaimTypes.Role, r.Role_Nm)));
+        claims.AddRange(roles.Items.Select(r => new Claim(ClaimTypes.Role, r.role_Nm)));
 
         var token = GenerateToken(claims, existingCorrelation);
         return Result<TokenResponse>.Success(token);

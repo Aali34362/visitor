@@ -2,6 +2,6 @@
 
 public class IdentityPolicy : BaseModel
 {
-    public string Name { get; set; }
-    public string Tags { get; set; }
+    public string name { get; set; }
+    public string tags { get; set; }
 }

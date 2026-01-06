@@ -2,6 +2,6 @@
 
 public class IdentityPolicyPageActionMappingList : BaseResponse
 {
-    public string Policy_Nm { get; set; } = null!;
-    public string PageAction_Nm { get; set; } = null!;
+    public string policy_Nm { get; set; } = null!;
+    public string pageAction_Nm { get; set; } = null!;
 }

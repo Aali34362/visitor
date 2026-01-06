@@ -6,19 +6,19 @@ public class IdentityPageConfiguration : BasePostGreSqlConfiguration<IdentityPag
     {
         base.Configure(entity);
 
-        entity.Property(e => e.Page_Title)
+        entity.Property(e => e.page_Title)
              .HasMaxLength(MaxLengthValues.PageTitle)
             .IsUnicode(false);
 
-        entity.Property(e => e.Page_Url)
+        entity.Property(e => e.page_Url)
             .HasMaxLength(MaxLengthValues.PageUrl)
            .IsUnicode(false);
 
-        entity.Property(e => e.Page_Nm)
+        entity.Property(e => e.page_Nm)
            .HasMaxLength(MaxLengthValues.PageName)
           .IsUnicode(false);
 
-        entity.Property(e => e.Icon)
+        entity.Property(e => e.icon)
            .HasMaxLength(MaxLengthValues.Icon)
           .IsUnicode(false);
     }

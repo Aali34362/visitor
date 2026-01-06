@@ -19,16 +19,10 @@ public class ModuleController(IIdentityModuleAppService moduleService) : BaseCon
     [SwaggerResponse(404, "Module not found")]
     [ProducesResponseType(typeof(PaginatedList<IdentityModuleList>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> GetAllAsync([FromQuery] GetModuleListQuery query)
+    public async Task<IActionResult> GetAllAsync([FromQuery] GetModuleListQuery query)
     {
         var result = await _moduleService.GetAllAsync(query);
-        if (!result.IsSuccess)
-        {
-            if (result.Error?.Type == ErrorTypeValues.NotFound)
-                return NotFound(result.Error);
-            return BadRequest(result.Error);
-        }
-        return Ok(result.Value);
+        return HandleResult(result);
     }
 
     [HttpGet("{id}")]
@@ -41,16 +35,10 @@ public class ModuleController(IIdentityModuleAppService moduleService) : BaseCon
     [SwaggerResponse(404, "Module not found")]
     [ProducesResponseType(typeof(IdentityModuleDetail), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> GetByIdAsync([FromRoute][Required] Guid id)
+    public async Task<IActionResult> GetByIdAsync([FromRoute][Required] Guid id)
     {
         var result = await _moduleService.GetByIdAsync(new() { Id = id });
-        if (!result.IsSuccess)
-        {
-            if (result.Error?.Type == ErrorTypeValues.NotFound)
-                return NotFound(result.Error);
-            return BadRequest(result.Error);
-        }
-        return Ok(result.Value);
+        return HandleResult(result);
     }
 
     [HttpPost]
@@ -63,16 +51,10 @@ public class ModuleController(IIdentityModuleAppService moduleService) : BaseCon
     [SwaggerResponse(400, "Invalid Module input")]
     [ProducesResponseType(typeof(Result<bool>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> CreateAsync([FromBody] CreateModuleCommand command)
+    public async Task<IActionResult> CreateAsync([FromBody] CreateModuleCommand command)
     {
         var result = await _moduleService.CreateAsync(command);
-        if (!result.IsSuccess)
-        {
-            if (result.Error?.Type == ErrorTypeValues.NotFound)
-                return NotFound(result.Error);
-            return BadRequest(result.Error);
-        }
-        return Ok(result.Value);
+        return HandleResult(result);
     }
 
     [HttpPut("{id}")]
@@ -86,17 +68,11 @@ public class ModuleController(IIdentityModuleAppService moduleService) : BaseCon
     [SwaggerResponse(404, "Module not found")]
     [ProducesResponseType(typeof(Result<bool>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> UpdateAsync([FromRoute][Required] Guid id, [FromBody] UpdateModuleCommand command)
+    public async Task<IActionResult> UpdateAsync([FromRoute][Required] Guid id, [FromBody] UpdateModuleCommand command)
     {
         command.Id = id;
         var result = await _moduleService.UpdateAsync(command);
-        if (!result.IsSuccess)
-        {
-            if (result.Error?.Type == ErrorTypeValues.NotFound)
-                return NotFound(result.Error);
-            return BadRequest(result.Error);
-        }
-        return Ok(result.Value);
+        return HandleResult(result);
     }
 
     [HttpDelete("{id}")]
@@ -109,15 +85,9 @@ public class ModuleController(IIdentityModuleAppService moduleService) : BaseCon
     [SwaggerResponse(404, "Module not found")]
     [ProducesResponseType(typeof(Result<bool>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> DeleteAsync([FromRoute][Required] Guid id)
+    public async Task<IActionResult> DeleteAsync([FromRoute][Required] Guid id)
     {
         var result = await _moduleService.DeleteAsync(new() { Id = id });
-        if (!result.IsSuccess)
-        {
-            if (result.Error?.Type == ErrorTypeValues.NotFound)
-                return NotFound(result.Error);
-            return BadRequest(result.Error);
-        }
-        return Ok(result.Value);
+        return HandleResult(result);
     }
 }

@@ -36,25 +36,25 @@ public static class PageContextExtension
 
     public static async Task<PaginatedList<IdentityPageList>> GetPageListAsync(this IAMServiceContext _dbContext, IdentityPage dto, int index, int size)
     {
-        var whereClause = new StringBuilder("WHERE p.IsDeleted = FALSE AND m.IsDeleted = FALSE");
+        var whereClause = new StringBuilder("WHERE p.is_Deleted = FALSE AND m.is_Deleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (!string.IsNullOrEmpty(dto.Page_Nm))
+        if (!string.IsNullOrEmpty(dto.page_Nm))
         {
             whereClause.Append(" AND LOWER(p.Page_Nm) = @Page_Nm");
-            parameters.Add("Page_Nm", dto.Page_Nm.ToLower());
+            parameters.Add("Page_Nm", dto.page_Nm.ToLower());
         }
 
-        if (dto.Page_Level > 0)
+        if (dto.page_Level > 0)
         {
             whereClause.Append(" AND p.Page_Level = @Page_Level");
-            parameters.Add("Page_Level", dto.Page_Level);
+            parameters.Add("Page_Level", dto.page_Level);
         }
 
-        if (dto.Module_Id != Guid.Empty)
+        if (dto.module_Id != Guid.Empty)
         {
             whereClause.Append(" AND p.Module_Id = @Module_Id");
-            parameters.Add("Module_Id", dto.Module_Id);
+            parameters.Add("Module_Id", dto.module_Id);
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -89,14 +89,14 @@ public static class PageContextExtension
     // For Internal Use We will use Entity Framework
     public static async Task<IdentityPage> GetPageByNameAsync(this IAMServiceContext _dbContext, string Page_Nm)
     {
-        System.Linq.Expressions.Expression<Func<IdentityPage, bool>> predicate = a => a.Page_Nm == Page_Nm;
+        System.Linq.Expressions.Expression<Func<IdentityPage, bool>> predicate = a => a.page_Nm == Page_Nm;
         var pageDetails = await _dbContext.IdentityPage.AsNoTracking().FirstOrDefaultAsync(predicate);
         return pageDetails!;
     }
 
     public static async Task<bool> ParentIdExistAsync(this IAMServiceContext _dbContext, Guid Parent_Id)
     {
-        System.Linq.Expressions.Expression<Func<IdentityPage, bool>> predicate = a => a.Id == Parent_Id;
+        System.Linq.Expressions.Expression<Func<IdentityPage, bool>> predicate = a => a.id == Parent_Id;
         var pageDetails = await _dbContext.IdentityPage.AsNoTracking().FirstOrDefaultAsync(predicate);
         if(pageDetails is not null)
             return true;

@@ -52,9 +52,9 @@ public class IdentityPolicyAppService : IIdentityPolicyAppService
             return Result<bool>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {command.Id!}", propertyName: nameof(IdentityPolicy)));
 
         var Policy = _mapper.Map<UpdatePolicyCommand, IdentityPolicy>(command);
-        Policy.Name = data.Name; 
-        Policy.CreatedAt = data.UpdatedAt;
-        Policy.CreatedBy = data.UpdatedBy; 
+        Policy.name = data.name; 
+        Policy.created_At = data.updated_At;
+        Policy.created_By = data.updated_By; 
 
         return await _businessService.UpdateAsync(Policy);
     }

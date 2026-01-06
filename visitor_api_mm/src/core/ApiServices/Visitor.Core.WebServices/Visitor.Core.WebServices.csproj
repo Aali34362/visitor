@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Visitor.Core.DesignPatterns\Visitor.Core.DesignPatterns.csproj" />
     <ProjectReference Include="..\Visitor.Core.Domain\Visitor.Core.Domain.csproj" />
   </ItemGroup>
 

@@ -2,8 +2,8 @@
 
 public class BaseResponse
 {
-    public Guid Id { get; set; }
-    public DateTime UpdatedAt { get; set; } = DateTime.Now;
-    public int Act_Ind { get; set; }
-    public string UpdatedBy { get; set; } = "Admin";
+    public Guid id { get; set; }
+    public DateTime updated_At { get; set; } = DateTime.Now;
+    public int act_Ind { get; set; }
+    public string updated_By { get; set; } = "Admin";
 }

@@ -33,24 +33,24 @@ public static class PolicyContextExtension
 
         return new IdentityPolicyDetail
         {
-            Id = raw.Id,
-            Name = raw.Name,
-            Tags = BaseDbContextExtension.ConvertTags(raw.Tags),
-            UpdatedAt = raw.UpdatedAt,
-            UpdatedBy = raw.UpdatedBy,
-            Act_Ind = raw.Act_Ind
+            id = raw.Id,
+            name = raw.Name,
+            tags = BaseDbContextExtension.ConvertTags(raw.Tags),
+            updated_At = raw.UpdatedAt,
+            updated_By = raw.UpdatedBy,
+            act_Ind = raw.Act_Ind
         };
     }
 
     public static async Task<PaginatedList<IdentityPolicyList>> GetPolicyListAsync(this IAMServiceContext _dbContext, IdentityPolicy dto, int index, int size)
     {
-        var whereClause = new StringBuilder("WHERE IsDeleted = FALSE");
+        var whereClause = new StringBuilder("WHERE is_Deleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (!string.IsNullOrEmpty(dto.Name))
+        if (!string.IsNullOrEmpty(dto.name))
         {
             whereClause.Append(" AND LOWER(Name) = @Name");
-            parameters.Add("Name", dto.Name.ToLower());
+            parameters.Add("Name", dto.name.ToLower());
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -74,12 +74,12 @@ public static class PolicyContextExtension
 
         var results = rawResults.Select(r => new IdentityPolicyList
         {
-            Id = r.Id,
-            Name = r.Name,
-            Tags = BaseDbContextExtension.ConvertTags(r.Tags),
-            UpdatedAt = r.UpdatedAt,
-            UpdatedBy = r.UpdatedBy,
-            Act_Ind = r.Act_Ind
+            id = r.id,
+            name = r.name,
+            tags = BaseDbContextExtension.ConvertTags(r.tags),
+            updated_At = r.updated_At,
+            updated_By = r.updated_By,
+            act_Ind = r.act_Ind
         }).ToList();
 
         return results.ToList().ToPaginatedList(index, size, totalCount);
@@ -88,7 +88,7 @@ public static class PolicyContextExtension
 
     public static async Task<IdentityPolicy> GetPolicyByNameAsync(this IAMServiceContext _dbContext, string Policy_Nm)
     {
-        System.Linq.Expressions.Expression<Func<IdentityPolicy, bool>> predicate = a => a.Name == Policy_Nm;
+        System.Linq.Expressions.Expression<Func<IdentityPolicy, bool>> predicate = a => a.name == Policy_Nm;
         var policyDetails = await _dbContext.IdentityPolicy.AsNoTracking().FirstOrDefaultAsync(predicate);
         return policyDetails!;
     }

@@ -6,11 +6,11 @@ public class IdentityRoleConfiguration : BasePostGreSqlConfiguration<IdentityRol
     {
         base.Configure(entity);
 
-        entity.Property(e => e.Name)
+        entity.Property(e => e.name)
             .HasMaxLength(MaxLengthValues.RoleName)
             .IsUnicode(false);
 
-        entity.Property(e => e.Tags)
+        entity.Property(e => e.tags)
             .HasMaxLength(MaxLengthValues.Tags)
             .IsUnicode(false);
     }

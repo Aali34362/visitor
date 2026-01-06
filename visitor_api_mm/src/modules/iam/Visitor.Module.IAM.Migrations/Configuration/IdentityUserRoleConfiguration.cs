@@ -6,10 +6,10 @@ public class IdentityUserRoleConfiguration : BasePostGreSqlConfiguration<Identit
     {
         base.Configure(entity);
 
-        entity.HasIndex(e => e.User_Id)
+        entity.HasIndex(e => e.user_Id)
            .HasDatabaseName("ix_userrole_user_id");
 
-        entity.HasIndex(e => e.Role_Id)
+        entity.HasIndex(e => e.role_Id)
               .HasDatabaseName("ix_userrole_role_id");
     }
 }

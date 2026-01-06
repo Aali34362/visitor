@@ -6,27 +6,27 @@ public class IdentityUserConfiguration : BasePostGreSqlConfiguration<IdentityUse
     {
         base.Configure(entity);
 
-        entity.Property(e => e.UserName)
+        entity.Property(e => e.user_Nm)
             .HasMaxLength(MaxLengthValues.UserName)
             .IsUnicode(false);
 
-        entity.Property(e => e.FirstName)
+        entity.Property(e => e.first_Nm)
             .HasMaxLength(MaxLengthValues.FirstName)
             .IsUnicode(false);
 
-        entity.Property(e => e.LastName)
+        entity.Property(e => e.last_Nm)
             .HasMaxLength(MaxLengthValues.LastName)
             .IsUnicode(false);
 
-        entity.Property(e => e.Email)
+        entity.Property(e => e.email)
             .HasMaxLength(MaxLengthValues.Email)
             .IsUnicode(false);
 
-        entity.Property(e => e.PhoneNumber)
+        entity.Property(e => e.phone_No)
             .HasMaxLength(MaxLengthValues.PhoneNumber)
             .IsUnicode(false);
 
-        entity.Property(e => e.PasswordHash)
+        entity.Property(e => e.password_Hash)
             .HasMaxLength(MaxLengthValues.PasswordHash)
             .IsUnicode(false);
     }

@@ -37,7 +37,7 @@ public class IdentityPageActionAppService : IIdentityPageActionAppService
         var page = await _pageBusinessService.GetByNameAsync(command.Page_Nm);
 
         var PageAction = _mapper.Map<CreatePageActionCommand, IdentityPageAction>(command);
-        PageAction.Page_Id = page.Id;
+        PageAction.page_Id = page.id;
 
         return await _businessService.CreateAsync(PageAction);
     }
@@ -56,10 +56,10 @@ public class IdentityPageActionAppService : IIdentityPageActionAppService
         var page = await _pageBusinessService.GetByNameAsync(command.Page_Nm);
 
         var PageAction = _mapper.Map<UpdatePageActionCommand, IdentityPageAction>(command);
-        PageAction.Page_Id = page.Id;
-        PageAction.Name = data.Name; // Preserve the original name if not changed
-        PageAction.CreatedAt = data.UpdatedAt; // Preserve the original creation date
-        PageAction.CreatedBy = data.UpdatedBy; // Preserve the original creator
+        PageAction.page_Id = page.id;
+        PageAction.name = data.name; // Preserve the original name if not changed
+        PageAction.created_At = data.updated_At; // Preserve the original creation date
+        PageAction.created_By = data.updated_By; // Preserve the original creator
 
         return await _businessService.UpdateAsync(PageAction);
     }
@@ -82,7 +82,7 @@ public class IdentityPageActionAppService : IIdentityPageActionAppService
             var page = await _pageBusinessService.GetByNameAsync(query.Page_Nm);
             if (page is null)
                 return Result<PaginatedList<IdentityPageActionList>>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {query.Page_Nm} ", propertyName: nameof(IdentityPageAction)));
-            Page.Page_Id = page.Id;
+            Page.page_Id = page.id;
         }
 
         var data = await _businessService.GetAllAsync(Page, query.index, query.size);

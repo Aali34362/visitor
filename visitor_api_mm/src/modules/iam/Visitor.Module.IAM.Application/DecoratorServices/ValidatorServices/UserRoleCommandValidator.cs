@@ -41,7 +41,7 @@ public class CreateUserRoleCommandValidator : AbstractValidator<CreateUserRoleMa
                 if (user is null || role is null)
                     return true; 
 
-                var exists = await _businessService.IsUserRoleMappingExistsAsync(user.Id, role.Id);
+                var exists = await _businessService.IsUserRoleMappingExistsAsync(user.id, role.id);
                 return !exists;
             }).WithMessage(x => $"Mapping for '{x.User_Nm}' and '{x.Role_Nm}' already exists.");
     }
@@ -88,7 +88,7 @@ public class UpdateUserRoleCommandValidator : AbstractValidator<UpdateUserRoleMa
                 if (user is null || role is null)
                     return true;
 
-                var exists = await _businessService.IsUserRoleMappingExistsAsync(user.Id, role.Id);
+                var exists = await _businessService.IsUserRoleMappingExistsAsync(user.id, role.id);
                 return !exists;
             }).WithMessage(x => $"Mapping for '{x.User_Nm}' and '{x.Role_Nm}' already exists.");
     }

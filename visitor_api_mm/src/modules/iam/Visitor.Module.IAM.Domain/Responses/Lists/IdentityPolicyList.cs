@@ -2,6 +2,6 @@
 
 public class IdentityPolicyList : BaseResponse
 {
-    public string Name { get; set; }
-    public Dictionary<string, string> Tags { get; set; }
+    public string name { get; set; }
+    public Dictionary<string, string> tags { get; set; }
 }

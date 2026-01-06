@@ -5,10 +5,10 @@ public class IdentityPolicyPageActionConfiguration : BasePostGreSqlConfiguration
     public override void Configure(EntityTypeBuilder<IdentityPolicyPageActionMapping> entity)
     {
         base.Configure(entity);
-        entity.HasIndex(e => e.Policy_Id)
+        entity.HasIndex(e => e.policy_Id)
              .HasDatabaseName("ix_policypageactions_policy_id");
 
-        entity.HasIndex(e => e.PageAction_Id)
+        entity.HasIndex(e => e.pageAction_Id)
               .HasDatabaseName("ix_policypageactions_pageaction_id");
     }
 }

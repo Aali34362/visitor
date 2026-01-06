@@ -43,16 +43,16 @@ public static class RolePolicyContextExtension
         var whereClause = new StringBuilder("WHERE rp.IsDeleted = FALSE AND p.IsDeleted = FALSE AND r.IsDeleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (dto.Policy_Id != Guid.Empty)
+        if (dto.policy_Id != Guid.Empty)
         {
             whereClause.Append(" AND rp.Policy_Id = @PolicyId");
-            parameters.Add("PolicyId", dto.Policy_Id);
+            parameters.Add("PolicyId", dto.policy_Id);
         }
 
-        if (dto.Role_Id != Guid.Empty)
+        if (dto.role_Id != Guid.Empty)
         {
             whereClause.Append(" AND rp.Role_Id = @RoleId");
-            parameters.Add("RoleId", dto.Role_Id);
+            parameters.Add("RoleId", dto.role_Id);
         }
         parameters.Add("Offset", (index - 1) * size);
         parameters.Add("PageSize", size);
@@ -86,7 +86,7 @@ public static class RolePolicyContextExtension
 
     public static async Task<bool> IsRolePolicyMappingExistsAsync(this IAMServiceContext _dbContext, Guid policy_id, Guid role_id)
     {
-        System.Linq.Expressions.Expression<Func<IdentityRolePolicyMapping, bool>> predicate = a => a.Policy_Id == policy_id & a.Role_Id == role_id;
+        System.Linq.Expressions.Expression<Func<IdentityRolePolicyMapping, bool>> predicate = a => a.policy_Id == policy_id & a.role_Id == role_id;
         var exist = await _dbContext.IdentityRolePolicyMapping.AsNoTracking().AnyAsync(predicate);
         return exist;
     }

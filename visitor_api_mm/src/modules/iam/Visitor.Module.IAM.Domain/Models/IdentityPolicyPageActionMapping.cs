@@ -2,6 +2,6 @@
 
 public class IdentityPolicyPageActionMapping : BaseModel
 {
-    public Guid Policy_Id { get; set; }
-    public Guid PageAction_Id { get; set; }
+    public Guid policy_Id { get; set; }
+    public Guid pageAction_Id { get; set; }
 }

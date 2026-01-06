@@ -41,7 +41,7 @@ public class CreateRolePolicyCommandValidator : AbstractValidator<CreateRolePoli
                 if (policy is null || role is null)
                     return true; 
 
-                var exists = await _businessService.IsRolePolicyMappingExistsAsync(policy.Id, role.Id);
+                var exists = await _businessService.IsRolePolicyMappingExistsAsync(policy.id, role.id);
                 return !exists;
             }).WithMessage(x => $"Mapping for '{x.Policy_Nm}' and '{x.Role_Nm}' already exists.");
     }
@@ -88,7 +88,7 @@ public class UpdateRolePolicyCommandValidator : AbstractValidator<UpdateRolePoli
                 if (policy is null || role is null)
                     return true;
 
-                var exists = await _businessService.IsRolePolicyMappingExistsAsync(policy.Id, role.Id);
+                var exists = await _businessService.IsRolePolicyMappingExistsAsync(policy.id, role.id);
                 return !exists;
             }).WithMessage(x => $"Mapping for '{x.Policy_Nm}' and '{x.Role_Nm}' already exists.");
     }

@@ -40,16 +40,16 @@ public static class PolicyPageActionContextExtension
         var whereClause = new StringBuilder("WHERE ppa.IsDeleted = FALSE AND pa.IsDeleted = FALSE AND p.IsDeleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (dto.Policy_Id != Guid.Empty)
+        if (dto.policy_Id != Guid.Empty)
         {
             whereClause.Append(" AND ppa.Policy_Id = @PolicyId");
-            parameters.Add("PolicyId", dto.Policy_Id);
+            parameters.Add("PolicyId", dto.policy_Id);
         }
 
-        if (dto.PageAction_Id != Guid.Empty)
+        if (dto.pageAction_Id != Guid.Empty)
         {
             whereClause.Append(" AND ppa.PageAction_Id = @PageActionId");
-            parameters.Add("PageActionId", dto.PageAction_Id);
+            parameters.Add("PageActionId", dto.pageAction_Id);
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -83,7 +83,7 @@ public static class PolicyPageActionContextExtension
 
     public static async Task<bool> IsPolicyPageActionMappingExistsAsync(this IAMServiceContext _dbContext, Guid policy_id, Guid pageAction_id)
     {
-        System.Linq.Expressions.Expression<Func<IdentityPolicyPageActionMapping, bool>> predicate = a => a.Policy_Id == policy_id & a.PageAction_Id == pageAction_id;
+        System.Linq.Expressions.Expression<Func<IdentityPolicyPageActionMapping, bool>> predicate = a => a.policy_Id == policy_id & a.pageAction_Id == pageAction_id;
         var exist = await _dbContext.IdentityPolicyPageActionMapping.AsNoTracking().AnyAsync(predicate);
         return exist;
     }

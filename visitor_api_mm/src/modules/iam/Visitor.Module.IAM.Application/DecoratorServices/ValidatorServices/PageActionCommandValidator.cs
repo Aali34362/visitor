@@ -41,9 +41,9 @@ public class CreatePageActionCommandValidator : AbstractValidator<CreatePageActi
                        var page = await _pageBusinessService.GetByNameAsync(command.Page_Nm);
                        if (page is null)
                            return true;
-                       Page_Id = page.Id;
+                       Page_Id = page.id;
                    }
-                   var existing = await _businessService.GetListAsync(new() { Page_Id = Page_Id, Action = command.Action, Name = command.Name });
+                   var existing = await _businessService.GetListAsync(new() { page_Id = Page_Id, action = command.Action, name = command.Name });
 
                    return existing is null || !existing.Any();
                })

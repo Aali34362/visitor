@@ -33,7 +33,7 @@ public class IdentityUserLoginAppService : IIdentityUserLoginAppService
         if (data is null)
             return Result<bool>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {command.Id!}", propertyName: nameof(IdentityUserLogin)));
 
-        data.Logout_Date = command.Logout_Date;
+        data.logout_Dt = command.Logout_Date;
         return await _businessService.UpdateAsync(data);
     }
 

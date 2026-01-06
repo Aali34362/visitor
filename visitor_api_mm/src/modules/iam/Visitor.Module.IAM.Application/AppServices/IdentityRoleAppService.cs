@@ -52,9 +52,9 @@ public class IdentityRoleAppService : IIdentityRoleAppService
             return Result<bool>.Failure(ErrorDetail.Business(errorMessage: $"{CustomMessages.RECORD_NOT_FOUND} : {command.Id!}", propertyName: nameof(IdentityRole)));
 
         var Role = _mapper.Map<UpdateRoleCommand, IdentityRole>(command);
-        Role.Name = data.Name; 
-        Role.CreatedAt = data.UpdatedAt;
-        Role.CreatedBy = data.UpdatedBy; 
+        Role.name = data.name; 
+        Role.created_At = data.updated_At;
+        Role.created_By = data.updated_By; 
 
         return await _businessService.UpdateAsync(Role);
     }

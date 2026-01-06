@@ -6,19 +6,19 @@ public class IdentityPageActionConfiguration : BasePostGreSqlConfiguration<Ident
     {
         base.Configure(entity);
 
-        entity.Property(e => e.Name)
+        entity.Property(e => e.name)
              .HasMaxLength(MaxLengthValues.PageActionName)
             .IsUnicode(false);
 
-        entity.Property(e => e.Action)
+        entity.Property(e => e.action)
             .HasMaxLength(MaxLengthValues.PageActionAction)
            .IsUnicode(false);
 
-        entity.Property(e => e.AccessLevel)
+        entity.Property(e => e.access_Level)
            .HasMaxLength(MaxLengthValues.PageActionAccessLevel)
           .IsUnicode(false);
 
-        entity.Property(e => e.PageUrl)
+        entity.Property(e => e.page_Url)
            .HasMaxLength(MaxLengthValues.PageActionUrl)
           .IsUnicode(false);
     }

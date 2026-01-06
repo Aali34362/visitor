@@ -46,8 +46,8 @@ public class IdentityPolicyPageActionAppService : IIdentityPolicyPageActionAppSe
 
         var mapping = new IdentityPolicyPageActionMapping
         {
-            Policy_Id = policy.Id,
-            PageAction_Id = pageAction.Id
+            policy_Id = policy.id,
+            pageAction_Id = pageAction.id
         };
 
         return await _businessService.CreateAsync(mapping);
@@ -70,11 +70,11 @@ public class IdentityPolicyPageActionAppService : IIdentityPolicyPageActionAppSe
 
         var updated = new IdentityPolicyPageActionMapping
         {
-            Id = command.Id,
-            Policy_Id = policy.Id,
-            PageAction_Id = pageAction.Id,
-            CreatedAt = existing.UpdatedAt,
-            CreatedBy = existing.UpdatedBy
+            id = command.Id,
+            policy_Id = policy.id,
+            pageAction_Id = pageAction.id,
+            created_At = existing.updated_At,
+            created_By = existing.updated_By
         };
 
         return await _businessService.UpdateAsync(updated);
@@ -103,7 +103,7 @@ public class IdentityPolicyPageActionAppService : IIdentityPolicyPageActionAppSe
                     $"{CustomMessages.RECORD_NOT_FOUND} : {query.Policy_Nm}",
                     nameof(IdentityPolicyPageActionMapping)));
 
-            policyId = policy.Id;
+            policyId = policy.id;
         }
 
         if (!string.IsNullOrWhiteSpace(query.PageAction_Nm))
@@ -114,13 +114,13 @@ public class IdentityPolicyPageActionAppService : IIdentityPolicyPageActionAppSe
                     $"{CustomMessages.RECORD_NOT_FOUND} : {query.PageAction_Nm}",
                     nameof(IdentityPolicyPageActionMapping)));
 
-            pageActionId = pageAction.Id;
+            pageActionId = pageAction.id;
         }
 
         var data = await _businessService.GetAllAsync(new IdentityPolicyPageActionMapping
         {
-            Policy_Id = policyId,
-            PageAction_Id = pageActionId
+            policy_Id = policyId,
+            pageAction_Id = pageActionId
         }, query.index, query.size);
 
         if (data is null)

@@ -2,6 +2,6 @@
 
 public class IdentityRoleList : BaseResponse
 {
-    public string Name { get; set; } = null!;
-    public Dictionary<string, string> Tags { get; set; }
+    public string name { get; set; } = null!;
+    public Dictionary<string, string> tags { get; set; }
 }

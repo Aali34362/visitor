@@ -33,12 +33,12 @@ public static class RoleContextExtension
 
         return new IdentityRoleDetail
         {
-            Id = raw.Id,
-            Name = raw.Name,
-            Tags = BaseDbContextExtension.ConvertTags(raw.Tags),
-            UpdatedAt = raw.UpdatedAt,
-            UpdatedBy = raw.UpdatedBy,
-            Act_Ind = raw.Act_Ind
+            id = raw.Id,
+            name = raw.Name,
+            tags = BaseDbContextExtension.ConvertTags(raw.Tags),
+            updated_At = raw.UpdatedAt,
+            updated_By = raw.UpdatedBy,
+            act_Ind = raw.Act_Ind
         };
     }
 
@@ -47,10 +47,10 @@ public static class RoleContextExtension
         var whereClause = new StringBuilder("WHERE IsDeleted = FALSE");
         var parameters = new DynamicParameters();
 
-        if (!string.IsNullOrEmpty(dto.Name))
+        if (!string.IsNullOrEmpty(dto.name))
         {
             whereClause.Append(" AND LOWER(Name) = @Name");
-            parameters.Add("Name", dto.Name.ToLower());
+            parameters.Add("Name", dto.name.ToLower());
         }
 
         parameters.Add("Offset", (index - 1) * size);
@@ -74,12 +74,12 @@ public static class RoleContextExtension
 
         var results = rawResults.Select(r => new IdentityRoleList
         {
-            Id = r.Id,
-            Name = r.Name,
-            Tags = BaseDbContextExtension.ConvertTags(r.Tags),
-            UpdatedAt = r.UpdatedAt,
-            UpdatedBy = r.UpdatedBy,
-            Act_Ind = r.Act_Ind
+            id = r.id,
+            name = r.name,
+            tags = BaseDbContextExtension.ConvertTags(r.tags),
+            updated_At = r.updated_At,
+            updated_By = r.updated_By,
+            act_Ind = r.act_Ind
         }).ToList();
 
         return results.ToList().ToPaginatedList(index, size, totalCount);
@@ -87,7 +87,7 @@ public static class RoleContextExtension
 
     public static async Task<IdentityRole> GetRoleByNameAsync(this IAMServiceContext _dbContext, string Role_Nm)
     {
-        System.Linq.Expressions.Expression<Func<IdentityRole, bool>> predicate = a => a.Name == Role_Nm;
+        System.Linq.Expressions.Expression<Func<IdentityRole, bool>> predicate = a => a.name == Role_Nm;
         var roleDetails = await _dbContext.IdentityRole.AsNoTracking().FirstOrDefaultAsync(predicate);
         return roleDetails!;
     }

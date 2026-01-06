@@ -7,22 +7,22 @@ public abstract class BaseMySqlConfiguration<T> : IEntityTypeConfiguration<T> wh
         //Fluent Api configurations
         entity.ToTable($"{typeof(T).Name.ToLower()}");
 
-        entity.HasKey(e => e.Id).HasName($"pk_{typeof(T).Name.ToLower()}");
+        entity.HasKey(e => e.id).HasName($"pk_{typeof(T).Name.ToLower()}");
 
-        entity.Property(e => e.CreatedAt).HasColumnType("DATETIME");
-        entity.Property(e => e.UpdatedAt).HasColumnType("DATETIME");
+        entity.Property(e => e.created_At).HasColumnType("DATETIME");
+        entity.Property(e => e.updated_At).HasColumnType("DATETIME");
 
-        entity.Property(e => e.CreatedBy)
+        entity.Property(e => e.created_By)
            .HasMaxLength(150)
            .IsUnicode(false);
 
-        entity.Property(e => e.UpdatedBy)
+        entity.Property(e => e.updated_By)
           .HasMaxLength(150)
           .IsUnicode(false);
 
-        entity.HasKey(e => e.Id).HasName($"pk_{typeof(T).Name.ToLower()}");
+        entity.HasKey(e => e.id).HasName($"pk_{typeof(T).Name.ToLower()}");
 
-        entity.HasIndex(nameof(BaseModel.IsDeleted))
+        entity.HasIndex(nameof(BaseModel.is_Deleted))
          .HasDatabaseName($"ix_{typeof(T).Name.ToLower()}_isdeleted");
     }
 }
